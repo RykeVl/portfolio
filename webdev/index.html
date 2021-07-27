@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webdev</title>
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="root flex flex-column-nowrap flex-center">
+    <header class="header absolute absolute-top">
+      <nav class="header__nav nav">
+        <ul class="header__list list flex flex-row-wrap flex-center">
+          <li class="header__list-item list__item">
+            <a href="" class="list-item__link list-item__link_active link link_active link_blue-hover">About</a>
+          </li>
+          <li class="header__list-item list__item">
+            <a href="" class="list-item__link link link_blue-hover">Syllabus</a>
+          </li>
+          <li class="header__list-item header__list-item_logo list__item">
+            <img class="header__logo image" src="assets/logo.svg" alt="logo">
+          </li>
+          <li class="header__list-item list__item">
+            <a href="" class="list-item__link link link_blue-hover">Projects</a>
+          </li>
+          <li class="header__list-item list__item">
+            <a href="" class="list-item__link link link_blue-hover">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main flex flex-column-nowrap flex-end-center">
+      <h1 class="main__h1 h1-header color_white">YOUR LIFE IS WEBDEV</h1>
+
+      <p class="main__p color_white">
+        Whatever the approach to development may be, the final program must satisfy some fundamental properties
+      </p>
+
+      <button class="main__btn btn_blue padding_15-47">GET STARTED</button>
+
+      <div class="main__contacts-icons contacts-icons flex justify-content-space-between">
+        <a class="contacts__link contacts__link_mail link" href="">
+          <img src="assets/icons/mail.svg" alt="mail">
+        </a>
+        <a class="contacts__link contacts__link_facebook link" href="">
+          <img src="assets/icons/facebook.svg" alt="facebook">
+        </a>
+        <a class="contacts__link contacts__link_instagram link" href="">
+          <img src="assets/icons/insta.svg" alt="instagram">
+        </a>
+        <a class="contacts__link contacts__link_youtube link" href="">
+          <img src="assets/icons/youtube.svg" alt="youtube">
+        </a>
+      </div>
+    </main>
+
+    <section class="represent container-1062-842 flex flex-center">
+      <div class="row-2 flex flex-row-wrap justify-content-space-between">
+        <div class="col col-text represent__column_text flex flex-column-nowrap flex-center-start">
+          <h2 class="represent__title col-text__title h2-header color_37">Rappresent your idea with a smart Design</h2>
+
+          <p class="represent__p col-text__paragraph color_4e roboto">Tasks accompanying and related to programming
+            include:
+            testing, debugging,
+            source code maintenance,
+            <strong class="color_37">implementation
+              of build systems</strong>, and management of derived artifacts, such as the machine code of
+            computer programs.
+          </p>
+
+          <button class="btn_blue padding_15-47">GET STARTED</button>
+        </div>
+
+        <div class="col col-image represent__column_image flex flex-row-nowrap flex-end-center">
+          <img class="represent__image" src="assets/images/represent.png" alt="represent">
+        </div>
+      </div>
+    </section>
+
+    <section class="our-community flex flex-center background_gray width-100 padding_120-0-140">
+      <div class="row-2_2-3 flex flex-row-wrap justify-content-space-between">
+        <div class="our-community__text-container col flex flex-end-center">
+          <div class="our-community__text flex flex-start-center flex-column-nowrap">
+            <img src="assets/icons/userpic.png" alt="userpick">
+
+            <h3 class="our-community__title h3-header color_37">our community</h3>
+
+            <p class="our-community__p roboto color_4e">A hacker is any skilled computer expert that uses their
+              technical
+              knowledge
+              to
+              overcome a problem,
+              but it can also mean a security hacker in common language</p>
+          </div>
+        </div>
+
+        <div class="col flex flex-column-nowrap flex-center-end relative">
+          <div class="our-community__controls images-controls absolute flex flex-center">
+            <span class="images-controls__arrow images-controls__arrow_left">
+              <img src="assets/icons/arrow-left.svg" alt="arrow left">
+            </span>
+            <span class="images-controls__pages color_37 roboto">1 / 5</span>
+            <span class="images-controls__arrow images-controls__arrow_right">
+              <img src="assets/icons/arrow-right.svg" alt="arrow right">
+            </span>
+          </div>
+
+          <div class="our-community__images flex flex-row-nowrap overflow_hidden">
+            <img class="our-community__image" src="assets/images/our-community-1.png" alt="our-community-1">
+            <img class="our-community__image" src="assets/images/our-community-2.png" alt="our-community-1">
+            <img class="our-community__image" src="assets/images/our-community-1.png" alt="our-community-1">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="implement container-1062-842 flex flex-center">
+      <div class="row-2 flex flex-row-wrap justify-content-space-between">
+        <div class="col col-image implement__column_image flex flex-row-nowrap flex-start-center">
+          <img class="implement__image" src="assets/images/implement.png" alt="implement">
+        </div>
+
+        <div class="col col-text implement__column_text flex flex-column-nowrap flex-center-start">
+          <h2 class="implement__title col-text__title h2-header color_37">Implement right Code</h2>
+
+          <p class="implement__p col-text__paragraph color_4e roboto">These might be considered part of the <strong
+              class="color_37">programming process</strong>, but often the term
+            software development is used for this larger process with the term programming, implementation
+          </p>
+
+          <button class="btn_blue padding_15-47">LEARN MORE</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="sign-up width-100 flex flex-start-center flex-column-nowrap">
+      <h2 class="sign-up__title h2-header color_white">sign up for our newsletter</h2>
+
+      <form class="email-form flex" action="">
+        <input class="email-form__input" placeholder="E-mail" type="email" name="" id="">
+
+        <button type="button" class="email-form__button btn_blue">
+          <img src="assets/icons/check-icon.svg" alt="check-icon">
+        </button>
+      </form>
+    </section>
+
+    <section class="download background_gray width-100 flex flex-start-center flex-column-nowrap">
+      <h2 class="download__title h2-header color-37">Download the App</h2>
+
+      <p class="download__p roboto color_4e">Machine code was the language of early programs, written in the instruction
+        set of
+        the particular machine,
+        often in binary notation.
+      </p>
+
+      <div class="download__buttons flex flex-row-nowrap">
+        <div class="download__button">
+          <button class="button__store button__store_apple btn_blue flex flex-row-nowrap flex-sb-center">
+            <span class="button__text button__text_apple">apple store</span>
+
+            <span class="button__store-icon-container button__store-icon-container_apple flex flex-center">
+              <img class="button__store-icon" src="assets/icons/appstore.svg" alt="appstore">
+            </span>
+          </button>
+        </div>
+
+        <div class="download__button flex flex-row-nowrap">
+          <button class="button__store button__store_android btn_blue flex flex-row-nowrap flex-sb-center">
+            <span class="button__text button__text_apple">play market</span>
+
+            <span class="button__store-icon-container button__store-icon-container_android flex flex-center">
+              <img class="button__store-icon" src="assets/icons/play-market.svg" alt="play-market">
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer flex flex-center">
+      <div class="footer__container flex flex-sb-center flex-row-nowrap">
+        <div class="footer__links links">
+          <ul class="links-list flex flex-row-nowrap">
+            <li class="links-list__item">
+              <a class="link link_blue-hover color_white roboto" href="">Credits</a>
+            </li>
+            <li class="links-list__item">
+              <a class="link link_blue-hover color_white roboto" href="">Privacy</a>
+            </li>
+            <li class="links-list__item">
+              <a class="link link_blue-hover color_white roboto" href="">Our teams</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__logo">
+          <img src="assets/logo.svg" alt="logo">
+        </div>
+
+        <div class="footer__credits">
+          <p class="credits-text roboto">by TonYem for RSS at 2020</p>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+</body>
+
+</html>
