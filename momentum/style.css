@@ -1,0 +1,200 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: .3s;
+}
+
+body {
+	transition: background-image 1s ease-in-out;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	background-size: cover;
+	color: white;
+}
+
+.weather-icon {
+	font-size: 6rem;
+}
+
+.weather-block {
+	font-size: 2rem;
+
+	opacity: .9;
+
+	text-shadow:
+		rgba(0, 0, 0, 0.5) 3px 0 3px,
+		rgba(0, 0, 0, 0.5) -3px 0 3px,
+		rgba(0, 0, 0, 0.5) 0 3px 3px,
+		rgba(0, 0, 0, 0.5) 0 -3px 3px;
+}
+
+button {
+	background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	filter: grayscale(1);
+
+	border: none;
+	border-radius: 50%;
+}
+
+#refresh-quote {
+	height: 50px;
+	width: 50px;
+}
+
+#refresh-background {
+	display: flex;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+
+	/* background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	filter: grayscale(1); */
+
+	width: 60px;
+	height: 60px;
+	border: none;
+	border-radius: 50%;
+}
+
+button:hover {
+	filter: grayscale(.8);
+}
+
+button:active,
+button:focus {
+	outline: 0;
+}
+
+button:active {
+	transform: scale(1.02)
+}
+
+#time {
+	font-size: 8rem;
+	text-shadow: rgba(0, 0, 0, 0.5) 5px 0 10px,
+		rgba(0, 0, 0, 0.5) -5px 0 10px,
+		rgba(0, 0, 0, 0.5) 0 5px 10px,
+		rgba(0, 0, 0, 0.5) 0 -5px 10px;
+}
+
+#calendar {
+	font-size: 2rem;
+	opacity: .9;
+	text-shadow:
+		rgba(0, 0, 0, 0.5) 3px 0 3px,
+		rgba(0, 0, 0, 0.5) -3px 0 3px,
+		rgba(0, 0, 0, 0.5) 0 3px 3px,
+		rgba(0, 0, 0, 0.5) 0 -3px 3px;
+
+	margin-top: -1rem;
+	margin-bottom: 3rem;
+}
+
+h1 {
+	margin-bottom: 3rem;
+	text-shadow: rgba(0, 0, 0, 0.5) 3px 0 6px,
+		rgba(0, 0, 0, 0.5) -3px 0 6px,
+		rgba(0, 0, 0, 0.5) 0 3px 6px,
+		rgba(0, 0, 0, 0.5) 0 -3px 6px;
+}
+
+h2 {
+	margin-bottom: 0.5rem;
+	opacity: .85;
+	text-shadow:
+		rgba(0, 0, 0, 0.5) 3px 0 3px,
+		rgba(0, 0, 0, 0.5) -3px 0 3px,
+		rgba(0, 0, 0, 0.5) 0 3px 3px,
+		rgba(0, 0, 0, 0.5) 0 -3px 3px;
+}
+
+blockquote {
+	font-size: 2rem;
+	text-shadow: rgba(0, 0, 0, 0.5) 3px 0 6px,
+		rgba(0, 0, 0, 0.5) -3px 0 6px,
+		rgba(0, 0, 0, 0.5) 0 3px 6px,
+		rgba(0, 0, 0, 0.5) 0 -3px 6px;
+
+	margin-top: 5rem;
+	margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+	blockquote {
+		margin-top: 3rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.weather-block {
+		font-size: 1.5rem;
+	}
+
+	.weather-icon {
+		font-size: 4rem;;
+	}
+
+	blockquote {
+		margin-top: 3rem;
+		font-size: 1rem;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	#time {
+		font-size: 6rem;
+	}
+
+}
+
+@media (max-width: 500px) {
+	body {
+		padding: 20px;
+	}
+
+	.weather-icon {
+		font-size: 3rem;
+	}
+
+	.weather-block {
+		font-size: 1rem;
+	}
+
+	#time {
+		margin-top: 1rem;
+		font-size: 4rem;
+	}	
+
+	#calendar {
+		margin-top: 0;
+		margin-bottom: 1rem;
+		font-size: 1rem;
+	}
+
+	#refresh-background {
+		height: 40px;
+		width: 40px;
+	}
+
+	#refresh-quote {
+		height: 30px;
+		width: 30px;
+	}
+
+	blockquote {
+		margin-top: 1rem;
+	}
+}
