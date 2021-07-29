@@ -1,0 +1,182 @@
+:root {
+  --blur: 0;
+  --invert: 0;
+  --sepia: 0;
+  --saturate: 100;
+  --hue: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F7F7F7;
+}
+
+body::backdrop {
+  background-color: #F7F7F7;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #666666;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #333333;
+  font-family: "Roboto";
+}
+
+main {
+  height: 80vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main div {
+  margin: 0 50px;
+}
+main .filters {
+  display: flex;
+  flex-flow: column nowrap;
+}
+main .filters .filter-block .filter-title {
+  font-family: "Roboto";
+  display: block;
+  font-size: 1.25rem;
+}
+main .filters .filter-block .filter-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .filters .filter-block .filter-form .filter-range {
+  width: 250px;
+  margin-right: 10px;
+  background-color: #f7f7f7;
+}
+main .filters .filter-block .filter-form .filter-range::-webkit-inner-spin-button {
+  display: inline;
+}
+main .filters .filter-block .filter-form .filter-number {
+  width: 55px;
+  border: none;
+  background-color: #E39128;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 5px;
+  color: #f7f7f7;
+}
+main .filters .filter-block .filter-form .filter-number::-webkit-inner-spin-button {
+  display: none;
+}
+main .image {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+main .image .image-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  max-width: 600px;
+}
+main .image .image-btns .function-btn {
+  color: #f7f7f7;
+  margin: 0 10px;
+  padding: 15px 20px;
+  border: none;
+  background-color: #E39128;
+  font-family: "Roboto";
+  height: 40px;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s;
+}
+main .image .image-btns .function-btn:hover {
+  background-color: #CD6326;
+  cursor: pointer;
+}
+main .image .image-btns #load-file {
+  display: none;
+}
+main .image #targetImg {
+  max-width: 1000px;
+  max-height: 600px;
+}
+main .image canvas {
+  display: none;
+}
+
+.fullscreen {
+  position: absolute;
+  right: 50px;
+  top: -95px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #E39128;
+  border: 5px solid #E39128;
+  background-image: url(../assets/svg/fullscreen-open.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 2px solid #666666;
+}
+footer .github {
+  font-family: "Roboto";
+  display: flex;
+  justify-content: row nowrap;
+  align-items: center;
+}
+footer .github a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #E39128;
+}
+footer .github a img {
+  height: 50px;
+}
+footer .github a span {
+  margin-right: 20px;
+  vertical-align: middle;
+}
+footer .github a span::before {
+  content: "";
+}
+footer .github span {
+  font-size: 1.5rem;
+}
+footer .github span::before {
+  content: "|";
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
