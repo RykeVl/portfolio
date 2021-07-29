@@ -1,0 +1,88 @@
+@import '../../styles/colors.scss';
+
+.control-panel {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+
+  max-width: 400px;
+  padding: 25px;
+  height: 200px;
+  
+  border: 3px solid $mainWhite;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.form {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+  width: 350px;
+}
+
+.input {
+  height: 30px;
+  border: none;
+  background-color: $mainWhite;
+}
+
+.input-text {
+  padding: 5px;
+
+  &::placeholder {
+    text-transform: capitalize;
+  }
+}
+
+.input-color {
+  padding: 0;
+}
+
+.form-button, .control-button {
+  min-width: 100px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s;
+
+  background-color: $mainWhite;
+
+  &:hover {
+    background-color: red;
+  }
+}
+
+.form-button, .control-button {
+  min-width: 100px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s;
+
+  background-color: $mainWhite;
+
+  &:hover {
+    background-color: red;
+  }
+}
+
+.control-button:disabled {
+  background-color: gray;
+}
+
+.control-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  width: 350px;
+}
+
+.control-button {
+  height: 50px;
+}

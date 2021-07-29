@@ -1,0 +1,13 @@
+@import '../variables.scss';
+
+.car-wrapper,
+.car-image {
+  max-width: 150px;
+  max-height: 40px;
+}
+
+.car-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: $CONTROL_PANEL_WIDTH + 0;
+}
