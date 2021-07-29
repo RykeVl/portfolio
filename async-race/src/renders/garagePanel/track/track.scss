@@ -1,0 +1,100 @@
+@import '../../../styles/colors.scss';
+@import './variables.scss';
+
+.track {
+  position: relative;
+  border-bottom: 5px dashed grey;
+  margin: 50px 0 50px;
+  padding: 20px;
+
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+.car-label {
+  font-size: 1.5rem;
+  color: red;
+  position: absolute;
+  top: -35px;
+  left: $CONTROL_PANEL_WIDTH + 200px;
+}
+
+.car-edit-panel {
+  position: absolute;
+  left: $CONTROL_PANEL_WIDTH + 10px;
+  top: -40px;
+}
+
+.car-edit-button {
+  background-color: $mainWhite;
+  border: none;
+  font-size: 1.5rem;
+  transition: .3s;
+
+  &:hover {
+    background-color: red;
+  }
+}
+
+.car-select-button {
+  margin-right: 5px;
+}
+
+.car-control-panel {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 50px;
+  height: 80px;
+  padding: 5px;
+  top: -45px;
+  left: 0;
+}
+
+.car-start-button,
+.car-reset-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.car-start-button {
+  background-color: rgba($color: #00ff00, $alpha: .35);
+  border: 2px solid #00ff00;
+
+  &:hover {
+    background-color: rgba($color: #00ff00, $alpha: .85);
+  }
+
+  &:active {
+    background-color: rgba($color: #00ff00, $alpha: .55);
+  }
+
+  &:disabled {
+    background-color: rgba($color: #00ff00, $alpha: .35);
+    border: none;
+  }
+}
+
+.car-reset-button {
+  background-color: rgba($color: #ff0000, $alpha: .35);
+  border: 2px solid #ff0000;
+
+  &:hover {
+    background-color: rgba($color: #ff0000, $alpha: .85);
+  }
+
+  &:active {
+    background-color: rgba($color: #ff0000, $alpha: .55);
+  }
+
+  &:disabled {
+    background-color: rgba($color: #ff0000, $alpha: .35);
+    border: none;
+  }
+}

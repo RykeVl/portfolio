@@ -1,0 +1,38 @@
+@import '../../styles/colors.scss';
+
+.garage-panel {
+  position: relative;
+}
+
+.garage-car-count,
+.garage-page-number {
+  margin-left: 10px;
+  color: $mainWhite;
+}
+
+.garage-car-count {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.garage-page-number {
+  font-size: 1.5rem;
+}
+
+.car-tracks {
+  margin-top: 20px;
+  border-top: 2px solid $mainWhite;
+}
+
+.winner-announcement {
+  position: absolute;
+  color: $mainWhite;
+  font-size: 2.5rem;
+  font-weight: 500;
+  filter: drop-shadow(0 0px 20px $mainWhite);
+  top: 25px;
+  left: 50%;
+  max-width: 500px;
+  min-width: fit-content;
+  transform: translate(-50%);
+}

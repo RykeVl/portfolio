@@ -1,0 +1,21 @@
+@import '../../styles/colors.scss';
+
+.winners-layout {
+  width: fit-content;
+  margin: auto;
+}
+
+.winners-count, .page-number {
+  color: $mainWhite;
+}
+
+.winners-count {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.page-number {
+  font-size: 1.25rem;
+  margin: 10px;
+}
