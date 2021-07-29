@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>Virtual Piano</title>
+</head>
+
+<body>
+	<header>
+		<h1>Virtual Piano</h1>
+	</header>
+
+	<div class="piano">
+		<div class="buttons">
+			<div class="button-container">
+				<button class='toggle-notes toggle-buttons active' onclick="activateNotes(event)">Notes</button>
+				<button class='toggle-letters toggle-buttons' onclick="activateLetters(event)">Letters</button>
+				<div class="button-highlight"></div>
+			</div>
+		</div>
+
+		<div class="black-notes notes">
+			<div class="black-note black note" data-note="c-sharp">C#</div>
+			<div class="black-note black note" data-note="d-sharp">D#</div>
+			<div class="black-note black note"></div>
+			<div class="black-note black note" data-note="f-sharp">F#</div>
+			<div class="black-note black note" data-note="g-sharp">G#</div>
+			<div class="black-note black note" data-note="a-sharp">A#</div>
+		</div>
+		<div class="black-letters letters">
+			<div class="black-letter black letter" data-note="c-sharp">R</div>
+			<div class="black-letter black letter" data-note="d-sharp">T</div>
+			<div class="black-letter black letter"></div>
+			<div class="black-letter black letter" data-note="f-sharp">U</div>
+			<div class="black-letter black letter" data-note="g-sharp">I</div>
+			<div class="black-letter black letter" data-note="a-sharp">O</div>
+		</div>
+		<div class="black-keys black-linkeds keys">
+			<div class="black-key piano-key" data-note="c-sharp" data-key="KeyR"></div>
+			<div class="black-key piano-key" data-note="d-sharp" data-key="KeyT"></div>
+			<div class="black-key piano-key she_said_no_and_left_LULW"></div>
+			<div class="black-key piano-key" data-note="f-sharp" data-key="KeyU"></div>
+			<div class="black-key piano-key" data-note="g-sharp" data-key="KeyI"></div>
+			<div class="black-key piano-key" data-note="a-sharp" data-key="KeyO"></div>
+		</div>
+
+		<div class="white-keys keys">
+			<div class="white-key piano-key" data-note="c" data-key="KeyD"></div>
+			<div class="white-key piano-key" data-note="d" data-key="KeyF"></div>
+			<div class="white-key piano-key" data-note="e" data-key="KeyG"></div>
+			<div class="white-key piano-key" data-note="f" data-key="KeyH"></div>
+			<div class="white-key piano-key" data-note="g" data-key="KeyJ"></div>
+			<div class="white-key piano-key" data-note="a" data-key="KeyK"></div>
+			<div class="white-key piano-key" data-note="b" data-key="KeyL"></div>
+		</div>
+		<div class="white-notes notes">
+			<div class="white-note white note" data-note="c">C</div>
+			<div class="white-note white note" data-note="d">D</div>
+			<div class="white-note white note" data-note="e">E</div>
+			<div class="white-note white note" data-note="f">F</div>
+			<div class="white-note white note" data-note="g">G</div>
+			<div class="white-note white note" data-note="a">A</div>
+			<div class="white-note white note" data-note="b">B</div>
+		</div>
+		<div class="white-letters letters">
+			<div class="white-letter white letter" data-note="c">D</div>
+			<div class="white-letter white letter" data-note="d">F</div>
+			<div class="white-letter white letter" data-note="e">G</div>
+			<div class="white-letter white letter" data-note="f">H</div>
+			<div class="white-letter white letter" data-note="g">J</div>
+			<div class="white-letter white letter" data-note="a">K</div>
+			<div class="white-letter white letter" data-note="b">L</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="github">
+			<a href="https://github.com/RykeVl">
+				<img src="assets/svg/github.svg" alt="github">
+				<span>RykeVl</span>
+			</a>
+			<span>2021</span>
+		</div>
+		<div>
+			<a href="https://rs.school/js/">
+				<img src="assets/svg/rss.svg" alt="RSSchool">
+			</a>
+		</div>
+		<div>
+			<a href="https://youtu.be/VCeK7_WPz68">
+				<img src="assets/svg/youtube.svg" alt="youtube">
+			</a>
+		</div>
+		<button class="fullscreen">
+		</button>
+	</footer>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
