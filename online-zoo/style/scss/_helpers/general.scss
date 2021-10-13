@@ -1,0 +1,75 @@
+@import './colors.scss';
+
+body {
+  background-color: $heroText;
+}
+
+.inactive {
+  overflow: hidden;
+}
+
+.container-1920 {
+  max-width: 1920px;
+
+  @media (max-width: 1520px) {
+    max-width: 100%;
+  }
+}
+
+.container-1480 {
+  max-width: 1480px;
+
+  @media (max-width: 1520px) {
+    max-width: 1142px;
+  }
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.link {
+  text-decoration: none;
+  transition: .15s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &_classic:hover {
+    color: white;
+    border-color: white;
+  }
+}
+
+.display_none {
+  display: none;
+}
+
+.border_rounded,
+.border_rounded_before::before,
+.border_rounded_after::after {
+  border-radius: 42% 58% 55% 45% / 42% 49% 51% 58%;
+}
+
+.filter_pale {
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $imageFilter;
+    opacity: .2;
+    z-index: 1;
+  }
+
+  &_player::before {
+    width: 100%;
+    height: 100%;
+  }
+}

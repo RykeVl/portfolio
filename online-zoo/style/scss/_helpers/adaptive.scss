@@ -1,0 +1,449 @@
+.show {
+
+  &-after,
+  &-before,
+  &-600,  
+  &-900,
+  &-1050,
+  &-1200 {
+
+    &-1920,
+    &-1520,
+    &-1050,
+    &-1150,
+    &-1200,
+    &-900,
+    &-640,
+    &-620,
+    &-600 {
+
+      &-i,
+      &-ib,
+      &-b,
+      &-f {
+        display: none;
+      }
+    }
+  }
+
+  // 1520
+  &-after {
+    &-1520 {
+      @media (min-width: 1520px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // 1520
+  &-before {
+    &-1520 {
+      @media (max-width: 1519px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+
+  // 1200
+  &-after {
+    &-1200 {
+      @media (min-width: 1200px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // 1200
+  &-before {
+    &-1200 {
+      @media (max-width: 1199px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // 1150
+  &-after {
+    &-1150 {
+      @media (min-width: 1150px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // 1150
+  &-before {
+    &-1150 {
+      @media (max-width: 1149px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // 1050
+  &-after {
+    &-1050 {
+      @media (min-width: 1050px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // 1050
+  &-before {
+    &-1050 {
+      @media (max-width: 1049px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // 900
+  &-after {
+    &-900 {
+      @media (min-width: 900px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // 900
+  &-before {
+    &-900 {
+      @media (max-width: 899px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // 620
+  &-after {
+    &-620 {
+      @media (min-width: 620px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // 620
+  &-before {
+    &-620 {
+      @media (max-width: 619px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // 600
+  &-after {
+    &-600 {
+      @media (min-width: 600px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // 600
+  &-before {
+    &-600 {
+      @media (max-width: 599px) {
+        &-i {
+          display: inline;
+        }
+
+        &-ib {
+          display: inline-block;
+        }
+
+        &-b {
+          display: block;
+        }
+
+        &-f {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  &-1200-1520 {
+    @media (min-width: 1200px) and (max-width: 1519px) {
+      &-i {
+        display: inline;
+      }
+
+      &-ib {
+        display: inline-block;
+      }
+
+      &-b {
+        display: block;
+      }
+
+      &-f {
+        display: flex;
+      }
+    }
+  }
+
+  &-1050-1520 {
+    @media (min-width: 1050px) and (max-width: 1519px) {
+      &-i {
+        display: inline;
+      }
+
+      &-ib {
+        display: inline-block;
+      }
+
+      &-b {
+        display: block;
+      }
+
+      &-f {
+        display: flex;
+      }
+    }
+  }
+
+  &-900-1520 {
+    @media (min-width: 900px) and (max-width: 1519px) {
+      &-i {
+        display: inline;
+      }
+
+      &-ib {
+        display: inline-block;
+      }
+
+      &-b {
+        display: block;
+      }
+
+      &-f {
+        display: flex;
+      }
+    }
+  }
+
+  &-600-1200 {
+    @media (min-width: 600px) and (max-width: 1199px) {
+      &-i {
+        display: inline;
+      }
+
+      &-ib {
+        display: inline-block;
+      }
+
+      &-b {
+        display: block;
+      }
+
+      &-f {
+        display: flex;
+      }
+    }
+  }
+}
+
+.hide {
+  &-620-1200-b {
+    display: block;
+
+    @media(min-width: 620px) and (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  &-600-820-b {
+    display: block;
+
+    @media(min-width: 600px) and (max-width: 819px) {
+      display: none;
+    }
+  }
+}

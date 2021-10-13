@@ -1,0 +1,43 @@
+.zoom {
+  position: absolute;
+  bottom: 2.75%;
+  right: 4.5%;
+  width: 80px;
+
+  &__in,
+  &__out {
+    width: 33px;
+    height: 33px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #7fb3b6;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: .15s;
+    box-shadow: 0 0 3px rgba($color: #000000, $alpha: .25);
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+
+  &__icon {
+    max-height: 20px;
+    max-width: 20px;
+  }
+
+  @media (max-width: 1520px) {
+    right: 3.5%;
+  }
+
+  @media (max-width: 900px) {
+    right: 5.5%;
+    bottom: 3.75%;
+  }
+
+  @media (max-width: 600px) {
+    right: 6.45%;
+    bottom: 4.5%;
+  }
+}

@@ -1,0 +1,64 @@
+@import './info/info.scss';
+@import './facts/facts.scss';
+
+.description {
+
+  &__column {
+    max-width: 604px;
+
+    &_facts {
+      margin-right: 53px;
+    }
+  }
+
+  &__column-title {
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: 1520px) {
+
+    &__column {
+
+      &_info {
+        max-width: 360px;
+      }
+
+      &_facts {
+        max-width: 549px;
+        margin-right: 41px;
+      }
+    }
+  }
+
+  @media (max-width: 1050px) {
+
+    &__column {
+      max-width: 510px;
+
+      &_facts {
+        margin-top: 24px;
+        margin-left: 2px;
+        margin-right: 0;
+        max-width: 498px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    &__column {
+
+      &_info {
+        max-width: 300px;
+      }
+
+      &_facts {
+        margin-top: 31px;
+      }
+    }
+
+    &__column-title {
+      margin-bottom: 17px;
+    }
+  }
+}

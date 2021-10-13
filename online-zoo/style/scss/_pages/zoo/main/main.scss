@@ -1,0 +1,154 @@
+@import '../../../_helpers/colors.scss';
+
+.main {
+  min-height: 1000px;
+  width: 100%;
+  max-width: 1325px;
+  margin-right: -8px; // half scrollbar
+
+  &__title-container {
+    margin-top: 4px;
+    height: 60px;
+  }
+
+  &__title-btns {
+    width: 118px;
+    margin-right: 5px;
+    margin-top: 22px;
+  }
+
+  &__title-btn {
+    height: 42px;
+    width: 42px;
+    border: 2px solid $btnLined;
+    background-color: unset;
+    border-radius: 50%;
+    transition: .3s;
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+
+  &__section {
+
+    &_main-cameras {
+      margin-top: 27px;
+    }
+
+    &_side-cameras {
+      margin-top: 54px;
+    }
+
+    &_description {
+      margin-top: 98px;
+    }
+  }
+
+  @media (max-width: 1520px) {
+
+    max-width: 1008px;
+    margin-right: 0;
+    
+    &__title-container {
+      margin-top: 0;
+      height: 55px;
+      padding-right: 16px;
+    }
+
+    &__title {
+      align-self: flex-start;
+    }
+
+    &__title-btns {
+      margin-top: 0;
+    }
+
+    &__section {
+
+      &_main-cameras {
+        margin: -4px 1px 0 -1px;
+      }
+
+      &_side-cameras {
+        margin-top: 24px;
+      }
+
+      &_description {
+        margin-top: 67px;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+
+    max-width: 531px;
+
+    &__title-container {
+      padding-right: 0;
+      height: 34px;
+    }
+    
+    &__title-btns {
+      width: 92px;
+      align-self: flex-start;
+      margin-right: 9px;
+      margin-top: 2px;
+    }
+
+    &__title-btn {
+      height: 34px;
+      width: 34px;
+    }
+    
+    &__section {
+
+      &_side-cameras {
+        margin-top: 17px;
+      }
+
+      &_description {
+        margin-top: 47px;
+        margin-left: -3px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    max-width: 320px;
+    margin: auto;
+    // margin-left: 1px;
+    // margin-right: -1px;
+
+    &__title-btns {
+      margin-right: 0;
+      margin-top: 0;
+      width: 56px;
+    }
+
+    &__title-btn {
+      max-width: 24px;
+      max-height: 24px;
+      border: 1px solid $btnLined;
+    }
+
+    &__title-btn-img {
+      max-width: 9px;
+      max-height: 9px;
+    }
+
+    &__section {
+      
+      
+      
+      &_side-cameras {
+        margin-top: 11px;
+      }
+
+      &_description {
+        margin-top: 34px;
+      }
+    }
+  }
+}

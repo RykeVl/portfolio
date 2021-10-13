@@ -1,0 +1,209 @@
+@import '../_helpers/colors.scss';
+
+.rotate-border {
+  &__outer {
+    border-radius: 42% 58% 55% 45%/42% 49% 51% 58%;
+  }
+
+  &__container {
+    position: relative;
+    border-radius: 42% 58% 55% 45%/42% 49% 51% 58%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: 1s;
+
+    &_pets {
+      width: 237px;
+      height: 222px;
+      margin-top: 20px;
+    }
+
+    &_look, &_zoo {
+      width: 76px;
+      height: 74px;
+    }
+
+    &_map {
+      width: 73px;
+      height: 71px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-size: cover;
+    }
+
+    &_pets {
+
+      &::after,
+      &::before {
+        top: -15px;
+        left: -15px;
+        right: -15px;
+        bottom: -15px;
+      }
+
+      &_pandas::after {
+        background-image: url("../../../assets/images/pets-pandas.png");
+      }
+
+      &_eagles::after {
+        background-image: url("../../../assets/images/pets-eagles.png");
+      }
+
+      &_gorillas::after {
+        background-image: url("../../../assets/images/pets-gorillas.png");
+      }
+
+      &_aligators::after {
+        background-image: url("../../../assets/images/pets-aligators.png");
+      }
+
+      &_elephants::after {
+        background-image: url("../../../assets/images/pets-elephants.png");
+      }
+
+      &_lemurs::after {
+        background-image: url("../../../assets/images/pets-lemurs.png");
+      }
+    }
+
+    &_look, &_zoo {
+
+      &::after,
+      &::before {
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+      }
+
+      &_pandas::after {
+        background-image: url("../../../assets/images/look-pandas.png");
+      }
+
+      &_eagles::after {
+        background-image: url("../../../assets/images/look-eagles.png");
+      }
+
+      &_gorillas::after {
+        background-image: url("../../../assets/images/look-gorillas.png");
+      }
+
+      &_aligators::after {
+        background-image: url("../../../assets/images/look-aligators.png");
+      }
+
+      &_elephants::after {
+        background-image: url("../../../assets/images/look-elephants.png");
+      }
+
+      &_lemurs::after {
+        background-image: url("../../../assets/images/look-lemurs.png");
+      }
+    }
+
+    &_map {
+
+      &::after,
+      &::before {
+        top: -6px;
+        left: -6px;
+        right: -6px;
+        bottom: -6px;
+      }
+
+      &_pandas::after {
+        background-image: url("../../../assets/images/map-pandas.png");
+      }
+
+      &_eagles::after {
+        background-image: url("../../../assets/images/map-eagles.png");
+      }
+
+      &_gorillas::after {
+        background-image: url("../../../assets/images/map-gorillas.png");
+      }
+
+      &_aligators::after {
+        background-image: url("../../../assets/images/map-aligators.png");
+      }
+    }
+  }
+
+  &:hover {
+    .rotate-border__container {
+      transform: rotate(360deg);
+
+      .rotate-border__img {
+        transform: rotate(-360deg);
+      }
+    }
+  }
+
+  @media (max-width: 1700px) {
+    &__container {
+
+      &_pets {
+        margin-top: 25px;
+        width: 156px;
+        height: 151px;
+      }
+    }
+  }
+
+  @media (max-width: 1520px) {
+
+    &__container {
+      
+      &_zoo {
+        width: 65px;
+        height: 63px;
+        margin-top: 2px;
+        margin-left: 2px;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    &__container {
+
+      &_pets {
+        width: 170px;
+        height: 164px;
+      }
+
+      &_map {
+        width: 51px;
+        height: 51px;
+      }
+
+      &_zoo {
+        width: 41px;
+        height: 40px;
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__container {
+
+      &_pets {
+        margin-top: 50px;
+        width: 153px;
+        height: 147px;
+      }
+    }
+  }
+}

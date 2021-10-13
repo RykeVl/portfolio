@@ -1,0 +1,106 @@
+.carousel {
+
+  &__pets {
+
+    &_outer {
+      overflow: hidden;
+      height: 748px;
+    }
+  }
+
+  &__look {
+
+    &_outer {
+      overflow: hidden;
+      height: 100px;
+    }
+  }
+
+  &__side-cameras {
+
+    &_outer {
+      overflow: hidden;
+      height: 240px;
+    }
+  }
+
+  &_left {
+    transform: translateX(-100%);
+  }
+
+  &_base {
+    transform: translateX(0%);
+  }
+
+  &_right {
+    transform: translateX(100%);
+  }
+
+  &_replace {
+    transition: 0s !important;
+  }
+
+  @media (max-width: 1700px) {
+    &__pets {
+
+      &_outer {
+        height: 578px;
+      }
+    }
+  }
+
+  @media (max-width: 1520px) {
+
+    &__side-cameras {
+
+      &_outer {
+        height: 194px;
+      }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    &__pets {
+
+      &_outer {
+        height: 616px;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+
+    &__side-cameras {
+
+      &_outer {
+        height: 154px;
+      }
+    }
+  }
+
+  @media (max-width: 620px) {
+    &__pets {
+
+      &_outer {
+        height: 644px;
+      }
+    }
+
+    &__look {
+
+      &_outer {
+        height: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    &__side-cameras {
+
+      &_outer {
+        height: 85px;
+      }
+    }
+  }
+}

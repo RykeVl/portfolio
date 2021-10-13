@@ -1,0 +1,179 @@
+@import './aside/aside.scss';
+@import './main/main.scss';
+@import './main-cameras/main-cameras.scss';
+@import './side-cameras/side-cameras.scss';
+@import './description/description.scss';
+@import './banner/banner.scss';
+@import '../../_helpers/colors.scss';
+
+.zoo {
+  position: relative;
+  height: fit-content;
+  padding-top: 30px;
+
+  &__nav {
+    position: sticky;
+    top: 0;
+  }
+
+  &__nav-list-item {
+
+    &:not(:last-of-type) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &__nav-link {
+    display: block;
+    height: 96px;
+    padding: 15px;
+  }
+
+  &__nav-link_active {
+    background-color: $bg;
+    border-radius: 42% 58% 55% 45%/42% 49% 51% 58%;
+  }
+
+  &__nav-text {
+    font-family: Roboto Mono;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #2D2D2D;
+
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-left: -6px;
+  }
+
+  @media (max-width: 1520px) {
+
+    &__nav-list-item {
+
+      &:not(:last-of-type) {
+        margin-bottom: 60px;
+      }
+    }
+
+    &__nav-link {
+      height: 77px;
+      padding: 5px;
+    }
+
+    &__nav-text {
+      margin-top: 12px;
+      line-height: 16px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    padding-top: 21px;
+    padding-right: 19px;
+    padding-left: 21px;
+    justify-content: center;
+
+    &__nav {
+      width: 100%;
+    }
+
+    &__nav-list-item {
+
+      &:not(:last-of-type) {
+        margin-bottom: 42px;
+      }
+    }
+
+    &__nav-link {
+      position: relative;
+      max-width: 49px;
+      margin: auto;
+      height: 49px;
+    }
+
+    &__nav-text {
+      position: absolute;
+      left: 50%;
+      bottom: -20px;
+      transform: translateX(-42%);
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding-left: 0;
+  }
+
+  @media (max-width: 600px) {
+
+    flex-flow: column nowrap;
+    padding: 15px 10px;
+
+    &__nav {
+      height: 100%;
+    }
+
+    &__nav-list {
+      list-style: none;
+    }
+
+    &__nav-list-item {
+      height: 60px;
+      margin: 0 !important; // overwrite .zoo__nav-list-item:not(:last-of-type)
+      background-color: $bg;
+      border-bottom: 1px solid transparent;
+      transition: .3s;
+    }
+
+    &__nav-container {
+      height: 100%;
+      max-width: unset;
+      width: 100%;
+      margin: 0;
+      padding: 10px 16px 10px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__nav-link {
+      text-decoration: none;
+      max-width: 100%;
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      &_active {
+        max-width: calc(100% - 63px);
+        border-radius: 0;
+      }
+    }
+
+    &__nav-link-image {
+      max-height: 41px;
+      margin-right: 19px;
+    }
+
+    &__nav-link-text {
+      font-family: Roboto;
+      font-size: 12px;
+      line-height: 14px;
+      color: $heroText;
+      text-decoration: none;
+    }
+
+    &__nav-expand {
+      display: block;
+      height: 100%;
+      width: 50px;
+      background-color: unset;
+    }
+
+    &__nav-expand-img {
+      transition: .3s;
+    }
+  }
+}

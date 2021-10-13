@@ -1,0 +1,171 @@
+@import '../_helpers/colors.scss';
+
+.header {
+  background-color: $bg;
+  height: 110px;  
+  position: relative;
+  z-index: 100;
+
+  &__container {
+    &_full {
+      background-color: $bg;
+      height: 100%;
+      padding-left: 220px;
+      padding-right: 73px;
+      filter: drop-shadow(0px 1px 10px rgba(18, 87, 91, 0.25));
+      z-index: 101;
+    }
+  }
+
+  &__logo {
+    margin-right: 51px;
+  }
+
+  &__nav {
+    &_full {
+      max-width: 675px;
+    }
+  }
+
+  &__features-container {
+    max-width: 249px;
+  }
+
+  &__features {
+    width: 100%;
+  }
+
+  &__features-button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.125rem;
+    line-height: 21px;
+    text-transform: uppercase;
+    transition: .15s;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__features-item_border_round {
+    border: 1px solid $white;
+    border-radius: 100px;
+    padding: 16px 14px 15px;
+  }
+
+  @media (min-width: 1940px) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    &__container {
+      padding-left: 0;
+      padding-right: 0;
+
+      &_full {
+        max-width: 1540px;
+      }
+    }
+  }
+
+  @media (max-width: 1900px) {
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+
+      &_full {
+        padding: 20px 30px;
+      }
+    }
+  }
+
+  @media (max-width: 1520px) {
+    &__features-container {
+      max-width: 119px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    height: 124px;
+
+    &__nav {
+      &_full {
+        max-width: 637px;
+      }
+    }
+
+    &__logo {
+      margin-right: 53px;
+    }
+  }
+
+  @media (max-width: 900px) {
+
+    &__container {
+
+      &_full {
+        padding: 20px 30px 20px 20px;
+      }
+    }
+
+    &__nav {
+      &_full {
+        justify-content: flex-start;
+      }
+    }
+
+    &__features-container {
+      width: fit-content;
+    }
+
+    &__container_mobile {
+      position: absolute;
+      background-color: $bg;
+      left: 0;
+      bottom: 100%;
+      transform: translateY(-100%);
+      transition: .5s;
+      z-index: 99;
+    }
+
+    &__container_mobile_active {      
+      bottom: 0;
+      transform: translateY(100%);
+    }
+  }
+
+  @media (max-width: 640px) {
+    height: 78px;
+
+    &__logo-img {
+      max-width: 49px;
+    }
+
+    &__nav {
+      &_full {
+        justify-content: flex-start;
+      }
+    }
+
+    &__features-container {
+      justify-content: flex-end;
+    }
+
+    &__features {
+      width: fit-content;
+    }
+  }
+
+  @media (max-width: 320px) {
+    height: 50px;
+
+    &__container {
+
+      &_full {
+        padding: 7px 20px 5px 15px;
+      }
+    }
+  }
+}
