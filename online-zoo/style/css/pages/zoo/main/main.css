@@ -1,0 +1,127 @@
+.color_white {
+  color: #c5e1e6;
+}
+
+.color_black {
+  color: #0d444d;
+}
+
+.background_bg {
+  background-color: #2a8086;
+}
+
+.main {
+  min-height: 1000px;
+  width: 100%;
+  max-width: 1325px;
+  margin-right: -8px;
+}
+.main__title-container {
+  margin-top: 4px;
+  height: 60px;
+}
+.main__title-btns {
+  width: 118px;
+  margin-right: 5px;
+  margin-top: 22px;
+}
+.main__title-btn {
+  height: 42px;
+  width: 42px;
+  border: 2px solid #19707d;
+  background-color: unset;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.main__title-btn:hover {
+  background-color: #c5e1e6;
+}
+.main__section_main-cameras {
+  margin-top: 27px;
+}
+.main__section_side-cameras {
+  margin-top: 54px;
+}
+.main__section_description {
+  margin-top: 98px;
+}
+@media (max-width: 1520px) {
+  .main {
+    max-width: 1008px;
+    margin-right: 0;
+  }
+  .main__title-container {
+    margin-top: 0;
+    height: 55px;
+    padding-right: 16px;
+  }
+  .main__title {
+    align-self: flex-start;
+  }
+  .main__title-btns {
+    margin-top: 0;
+  }
+  .main__section_main-cameras {
+    margin: -4px 1px 0 -1px;
+  }
+  .main__section_side-cameras {
+    margin-top: 24px;
+  }
+  .main__section_description {
+    margin-top: 67px;
+  }
+}
+@media (max-width: 900px) {
+  .main {
+    max-width: 531px;
+  }
+  .main__title-container {
+    padding-right: 0;
+    height: 34px;
+  }
+  .main__title-btns {
+    width: 92px;
+    align-self: flex-start;
+    margin-right: 9px;
+    margin-top: 2px;
+  }
+  .main__title-btn {
+    height: 34px;
+    width: 34px;
+  }
+  .main__section_side-cameras {
+    margin-top: 17px;
+  }
+  .main__section_description {
+    margin-top: 47px;
+    margin-left: -3px;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    max-width: 320px;
+    margin: auto;
+  }
+  .main__title-btns {
+    margin-right: 0;
+    margin-top: 0;
+    width: 56px;
+  }
+  .main__title-btn {
+    max-width: 24px;
+    max-height: 24px;
+    border: 1px solid #19707d;
+  }
+  .main__title-btn-img {
+    max-width: 9px;
+    max-height: 9px;
+  }
+  .main__section_side-cameras {
+    margin-top: 11px;
+  }
+  .main__section_description {
+    margin-top: 34px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

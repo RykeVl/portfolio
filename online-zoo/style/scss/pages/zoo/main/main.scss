@@ -1,4 +1,4 @@
-@import '../../../_helpers/colors.scss';
+@import '../../../helpers/colors.scss';
 
 .main {
   min-height: 1000px;
@@ -118,8 +118,6 @@
 
     max-width: 320px;
     margin: auto;
-    // margin-left: 1px;
-    // margin-right: -1px;
 
     &__title-btns {
       margin-right: 0;

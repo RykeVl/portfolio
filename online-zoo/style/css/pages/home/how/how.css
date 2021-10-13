@@ -1,0 +1,118 @@
+.how {
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 132px;
+}
+.how__container {
+  position: relative;
+  margin: auto;
+  margin-top: 51px;
+  max-width: 1145px;
+}
+.how__title {
+  position: absolute;
+  top: -86.6%;
+  left: -14.33%;
+}
+.how__card {
+  position: relative;
+}
+.how__card-image-container {
+  background-color: white;
+  height: 145px;
+  width: 145px;
+  border-radius: 50%;
+  margin: auto;
+}
+.how__card-p {
+  position: absolute;
+  letter-spacing: 0.2px;
+  width: 278px;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-48%);
+  text-align: center;
+}
+.how_after {
+  background-image: url("../../../assets/images/how_after.png");
+  background-repeat: round;
+  background-size: cover;
+  height: 523px;
+}
+@media (max-width: 1520px) {
+  .how {
+    margin-bottom: 55px;
+    padding: 0;
+  }
+  .how__title {
+    top: -40%;
+    left: -12.25%;
+  }
+  .how__container {
+    margin-top: 40px;
+    max-width: 919px;
+    padding-right: 5px;
+  }
+  .how__card-p {
+    transform: translateX(-49%);
+  }
+  .how_after {
+    background-image: url("../../../assets/images/how_after-1200.png");
+    background-size: cover;
+  }
+}
+@media (max-width: 1150px) {
+  .how__title {
+    left: -7%;
+  }
+}
+@media (max-width: 1050px) {
+  .how__container {
+    max-width: 800px;
+  }
+  .how__card-p {
+    width: 187px;
+    bottom: -49px;
+  }
+}
+@media (max-width: 900px) {
+  .how__title {
+    top: -44%;
+    left: -6.7%;
+  }
+  .how__container {
+    margin-top: 20px;
+    max-width: 529px;
+    padding-right: 3px;
+    margin-bottom: 79px;
+  }
+  .how__card-image-container {
+    height: 113px;
+    width: 113px;
+  }
+  .how__card-image {
+    max-width: 40px;
+  }
+  .how_after {
+    height: 291px;
+    background-image: url("../../../assets/images/how_after-640.png");
+  }
+}
+@media (max-width: 639px) {
+  .how__title {
+    top: -40px;
+    left: 3.1%;
+  }
+  .how__container {
+    margin-top: 73px;
+    margin-bottom: 58px;
+    height: 545px;
+    flex-flow: column nowrap;
+  }
+  .how_after {
+    height: 291px;
+    background-image: url("../../../assets/images/how_after-320.png");
+  }
+}
+
+/*# sourceMappingURL=how.css.map */

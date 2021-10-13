@@ -1,0 +1,44 @@
+.zoom {
+  position: absolute;
+  bottom: 2.75%;
+  right: 4.5%;
+  width: 80px;
+}
+.zoom__in, .zoom__out {
+  width: 33px;
+  height: 33px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: #7fb3b6;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: 0.15s;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+.zoom__in:hover, .zoom__out:hover {
+  transform: scale(1.15);
+}
+.zoom__icon {
+  max-height: 20px;
+  max-width: 20px;
+}
+@media (max-width: 1520px) {
+  .zoom {
+    right: 3.5%;
+  }
+}
+@media (max-width: 900px) {
+  .zoom {
+    right: 5.5%;
+    bottom: 3.75%;
+  }
+}
+@media (max-width: 600px) {
+  .zoom {
+    right: 6.45%;
+    bottom: 4.5%;
+  }
+}
+
+/*# sourceMappingURL=zoom.css.map */
