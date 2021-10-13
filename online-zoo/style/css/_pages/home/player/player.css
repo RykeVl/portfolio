@@ -1,0 +1,47 @@
+.player {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.player:hover .player__play {
+  transform: scale(2);
+}
+.player__background {
+  position: relative;
+}
+.player__container {
+  overflow: hidden;
+}
+.player__play {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transition: 0.3s;
+}
+.player_main {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1520px) {
+  .player__container {
+    max-width: 560px;
+    max-height: 464px;
+  }
+}
+@media (max-width: 1050px) {
+  .player__container {
+    max-width: 255px;
+    max-height: 211px;
+  }
+  .player__play {
+    top: 20%;
+    left: 25%;
+  }
+  .player:hover .player__play {
+    transform: scale(1.25);
+  }
+}
+
+/*# sourceMappingURL=player.css.map */

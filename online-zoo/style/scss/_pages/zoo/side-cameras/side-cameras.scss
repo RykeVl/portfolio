@@ -1,0 +1,118 @@
+@import '../../../_helpers/colors.scss';
+
+.side-cameras {
+  position: relative;
+
+  &__title-container {
+    padding-left: 2px;
+  }
+
+  &__title {
+    color: $black;
+    font-family: Rubik;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+  }
+
+  &__cameras-container {
+    margin-top: 7px;
+    height: 240px;
+    max-width: 1204px;
+  }
+
+  &__camera {
+    border-radius: 18px;
+    width: 380px;
+    height: 240px;
+  }
+
+  &__slider {
+    position: absolute;
+    height: 73px;
+    right: 4.1%;
+    top: 41.8%;
+  }
+
+  &__carousel {
+
+    &_outer {
+      position: relative;
+    }
+
+    &_inner {
+      position: absolute;
+      width: 100%;
+      transition: .5s;
+    }
+  }
+
+  @media (max-width: 1520px) {
+
+    &__cameras-container {
+      max-width: 939px;
+      height: 194px;
+    }
+
+    &__camera {
+      border-radius: 16px;
+      width: 295px;
+      height: 194px;
+    }
+
+    &__slider {
+      right: 2%;
+      top: 42%;
+    }
+  }
+
+  @media (max-width: 900px) {
+
+    margin-left: -1px;
+
+    &__title-container {
+      padding: 0;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__cameras-container {
+      margin-top: 5px;
+      max-width: 479px;
+      height: 154px;
+    }
+
+    &__camera {
+      border-radius: 13px;
+      width: 235px;
+      height: 154px;
+    }
+
+    &__slider {
+      right: 3.3%;
+      top: 31%;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    &__cameras-container {
+      max-width: 271px;
+      height: 85px;
+    }
+    
+    &__camera {
+      width: 130px;
+      height: 85px;
+    }
+
+    &__slider {
+      height: 21px;
+      top: 47%;
+      right: 0;
+    }
+  }
+}

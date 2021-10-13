@@ -1,0 +1,132 @@
+.main {
+  height: 803px;
+  background-image: url("../../../assets/images/main.png");
+  background-size: cover;
+  background-repeat: round;
+
+  &__container {
+    margin-top: 48px;
+    margin-left: 16px;
+  }
+
+  &__paragraph {
+    max-width: 480px;
+    margin-top: 27px;
+    margin-bottom: 87px;
+  }
+
+  &__btns {
+    position: relative;
+    width: fit-content;
+  }
+
+  &__player-container {
+    max-width: 804px;
+    max-height: 666px;
+  }
+
+  &__text {
+    padding-top: 55px;
+  }
+
+  @media (max-width: 1520px) {
+    background-image: url("../../../assets/images/main-1200.png");
+    height: 657px;
+    margin-top: -1px;
+
+    &__player-container {
+      width: 560px;
+      height: 464px;
+    }
+
+    &__container {
+      margin-left: 0;
+    }
+
+    &__text {
+      padding-top: 49px;
+    }
+
+    &__paragraph {
+      margin-top: 30px;
+      margin-bottom: 37px;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    margin-top: 0;
+
+    &__container {
+      margin-top: 0;
+      padding: 30px 20px 20px 20px;
+    }
+
+    &__text {
+      padding-top: 0;
+    }
+
+    &__paragraph {
+      font-size: 14px;
+      line-height: 20px;
+      max-width: 290px;
+      margin-top: 22px;
+      margin-bottom: 29px;
+    }
+  }
+
+  @media (max-width: 1050px) {
+    background-image: url("../../../assets/images/main-640.png");
+    height: 405px;
+
+    &__btns {
+      margin-left: -1px;
+    }
+
+    &__player-container {
+      width: 255px;
+      height: 211px;
+    }
+
+    .row-2 {
+      .col:first-of-type {
+        flex-basis: 66%;
+      }
+
+      .col:last-of-type {
+        flex-basis: 34%;
+      }
+    }
+  }
+
+  @media (max-width: 639px) {
+    background-image: url("../../../assets/images/main-320.png");
+    background-size: cover;
+    height: 531px;
+
+    &__player-container {
+      margin: auto;
+    }
+
+    &__container {
+      padding: 20px 10px;
+    }
+
+    &__text {
+      width: fit-content;
+      margin: auto;
+      padding-top: 11px;
+      padding-right: 10px;
+    }
+
+    &__paragraph {
+      margin-top: 19px;
+      margin-bottom: 15px;      
+    }
+
+    .row-2 {
+      flex-flow: column-reverse nowrap;
+    }
+  }
+}

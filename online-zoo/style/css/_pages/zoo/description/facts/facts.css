@@ -1,0 +1,44 @@
+.facts__list {
+  padding-top: 1px;
+  margin-left: 22px;
+  max-width: 576px;
+}
+.facts__list-item {
+  position: relative;
+}
+.facts__list-item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.facts__list-item::before {
+  content: url("../../../assets/icons/facts-marker.svg");
+  position: absolute;
+  left: -23px;
+  top: -1px;
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 1520px) {
+  .facts__list {
+    margin-left: 27px;
+  }
+  .facts__list-item::before {
+    left: -27px;
+  }
+}
+@media (max-width: 900px) {
+  .facts__title {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .facts__list-item {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .facts__list-item::before {
+    left: -23px;
+    top: 5px;
+  }
+}
+
+/*# sourceMappingURL=facts.css.map */

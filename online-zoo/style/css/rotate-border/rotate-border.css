@@ -1,0 +1,159 @@
+.color_white {
+  color: #c5e1e6;
+}
+
+.color_black {
+  color: #0d444d;
+}
+
+.background_bg {
+  background-color: #2a8086;
+}
+
+.rotate-border__outer {
+  border-radius: 42% 58% 55% 45%/42% 49% 51% 58%;
+}
+.rotate-border__container {
+  position: relative;
+  border-radius: 42% 58% 55% 45%/42% 49% 51% 58%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: 1s;
+}
+.rotate-border__container_pets {
+  width: 237px;
+  height: 222px;
+  margin-top: 20px;
+}
+.rotate-border__container_look, .rotate-border__container_zoo {
+  width: 76px;
+  height: 74px;
+}
+.rotate-border__container_map {
+  width: 73px;
+  height: 71px;
+}
+.rotate-border__img {
+  position: absolute;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+}
+.rotate-border__img::after {
+  content: "";
+  position: absolute;
+  background-size: cover;
+}
+.rotate-border__img_pets::after, .rotate-border__img_pets::before {
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+}
+.rotate-border__img_pets_pandas::after {
+  background-image: url("../../../assets/images/pets-pandas.png");
+}
+.rotate-border__img_pets_eagles::after {
+  background-image: url("../../../assets/images/pets-eagles.png");
+}
+.rotate-border__img_pets_gorillas::after {
+  background-image: url("../../../assets/images/pets-gorillas.png");
+}
+.rotate-border__img_pets_aligators::after {
+  background-image: url("../../../assets/images/pets-aligators.png");
+}
+.rotate-border__img_pets_elephants::after {
+  background-image: url("../../../assets/images/pets-elephants.png");
+}
+.rotate-border__img_pets_lemurs::after {
+  background-image: url("../../../assets/images/pets-lemurs.png");
+}
+.rotate-border__img_look::after, .rotate-border__img_look::before, .rotate-border__img_zoo::after, .rotate-border__img_zoo::before {
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+}
+.rotate-border__img_look_pandas::after, .rotate-border__img_zoo_pandas::after {
+  background-image: url("../../../assets/images/look-pandas.png");
+}
+.rotate-border__img_look_eagles::after, .rotate-border__img_zoo_eagles::after {
+  background-image: url("../../../assets/images/look-eagles.png");
+}
+.rotate-border__img_look_gorillas::after, .rotate-border__img_zoo_gorillas::after {
+  background-image: url("../../../assets/images/look-gorillas.png");
+}
+.rotate-border__img_look_aligators::after, .rotate-border__img_zoo_aligators::after {
+  background-image: url("../../../assets/images/look-aligators.png");
+}
+.rotate-border__img_look_elephants::after, .rotate-border__img_zoo_elephants::after {
+  background-image: url("../../../assets/images/look-elephants.png");
+}
+.rotate-border__img_look_lemurs::after, .rotate-border__img_zoo_lemurs::after {
+  background-image: url("../../../assets/images/look-lemurs.png");
+}
+.rotate-border__img_map::after, .rotate-border__img_map::before {
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+}
+.rotate-border__img_map_pandas::after {
+  background-image: url("../../../assets/images/map-pandas.png");
+}
+.rotate-border__img_map_eagles::after {
+  background-image: url("../../../assets/images/map-eagles.png");
+}
+.rotate-border__img_map_gorillas::after {
+  background-image: url("../../../assets/images/map-gorillas.png");
+}
+.rotate-border__img_map_aligators::after {
+  background-image: url("../../../assets/images/map-aligators.png");
+}
+.rotate-border:hover .rotate-border__container {
+  transform: rotate(360deg);
+}
+.rotate-border:hover .rotate-border__container .rotate-border__img {
+  transform: rotate(-360deg);
+}
+@media (max-width: 1700px) {
+  .rotate-border__container_pets {
+    margin-top: 25px;
+    width: 156px;
+    height: 151px;
+  }
+}
+@media (max-width: 1520px) {
+  .rotate-border__container_zoo {
+    width: 65px;
+    height: 63px;
+    margin-top: 2px;
+    margin-left: 2px;
+  }
+}
+@media (max-width: 900px) {
+  .rotate-border__container_pets {
+    width: 170px;
+    height: 164px;
+  }
+  .rotate-border__container_map {
+    width: 51px;
+    height: 51px;
+  }
+  .rotate-border__container_zoo {
+    width: 41px;
+    height: 40px;
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .rotate-border__container_pets {
+    margin-top: 50px;
+    width: 153px;
+    height: 147px;
+  }
+}
+
+/*# sourceMappingURL=rotate-border.css.map */

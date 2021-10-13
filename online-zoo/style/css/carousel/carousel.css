@@ -1,0 +1,59 @@
+.carousel__pets_outer {
+  overflow: hidden;
+  height: 748px;
+}
+.carousel__look_outer {
+  overflow: hidden;
+  height: 100px;
+}
+.carousel__side-cameras_outer {
+  overflow: hidden;
+  height: 240px;
+}
+.carousel_left {
+  transform: translateX(-100%);
+}
+.carousel_base {
+  transform: translateX(0%);
+}
+.carousel_right {
+  transform: translateX(100%);
+}
+.carousel_replace {
+  transition: 0s !important;
+}
+@media (max-width: 1700px) {
+  .carousel__pets_outer {
+    height: 578px;
+  }
+}
+@media (max-width: 1520px) {
+  .carousel__side-cameras_outer {
+    height: 194px;
+  }
+}
+@media (max-width: 1199px) {
+  .carousel__pets_outer {
+    height: 616px;
+  }
+}
+@media (max-width: 900px) {
+  .carousel__side-cameras_outer {
+    height: 154px;
+  }
+}
+@media (max-width: 620px) {
+  .carousel__pets_outer {
+    height: 644px;
+  }
+  .carousel__look_outer {
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .carousel__side-cameras_outer {
+    height: 85px;
+  }
+}
+
+/*# sourceMappingURL=carousel.css.map */

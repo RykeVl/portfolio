@@ -1,0 +1,136 @@
+.how {
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 132px;
+
+  &__container {
+    position: relative;
+    margin: auto;
+    margin-top: 51px;
+    max-width: 1145px;
+  }
+
+  &__title {
+    position: absolute;
+    top: -86.6%;
+    left: -14.33%;
+  }
+
+  &__card {
+    position: relative;
+  }
+
+  &__card-image-container {
+    background-color: white;
+    height: 145px;
+    width: 145px;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  &__card-p {
+    position: absolute;
+    letter-spacing: 0.2px;
+    width: 278px;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-48%);
+    text-align: center;
+  }
+
+  &_after {
+    background-image: url("../../../assets/images/how_after.png");
+    background-repeat: round;
+    background-size: cover;
+    height: 523px;
+  }
+
+  @media (max-width: 1520px) {
+    margin-bottom: 55px;
+    padding: 0;
+
+    &__title {
+      top: -40%;
+      left: -12.25%;
+    }
+
+    &__container {
+      margin-top: 40px;
+      max-width: 919px;
+      padding-right: 5px;
+    }
+
+    &__card-p {
+      transform: translateX(-49%);
+    }
+
+    &_after {
+      background-image: url("../../../assets/images/how_after-1200.png");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    &__title {
+      left: -7%;
+    }
+  }
+
+  @media (max-width: 1050px) {
+    &__container {
+      max-width: 800px;
+    }
+
+    &__card-p {
+      width: 187px;
+      bottom: -49px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    &__title {
+      top: -44%;
+      left: -6.7%;
+    }
+
+    &__container {
+      margin-top: 20px;
+      max-width: 529px;
+      padding-right: 3px;
+      margin-bottom: 79px;
+    }
+
+    &__card-image-container {
+      height: 113px;
+      width: 113px;
+    }
+
+    &__card-image {
+      max-width: 40px;
+    }
+
+    &_after {
+      height: 291px;
+      background-image: url("../../../assets/images/how_after-640.png");
+    }
+  }
+
+  @media (max-width: 639px) {
+    &__title {
+      top: -40px;
+      left: 3.1%;
+    }
+
+    &__container {
+      margin-top: 73px;
+      margin-bottom: 58px;
+      height: 545px;
+      flex-flow: column nowrap;
+    }
+
+    &_after {
+      height: 291px;
+      background-image: url("../../../assets/images/how_after-320.png");
+    }
+  }
+}

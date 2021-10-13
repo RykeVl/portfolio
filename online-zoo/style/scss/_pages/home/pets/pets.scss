@@ -1,0 +1,287 @@
+.pets {
+  padding-top: 71px;
+  margin-bottom: 100px;
+
+  &__header {
+    margin-bottom: 66px;
+    margin-left: 9px;
+    margin-right: -8px;
+  }
+
+  &__cards-container {
+    position: relative;
+    margin-left: 8px;
+    margin-right: -8px;
+  }
+
+  &__carousel_outer {
+    position: relative;
+  }
+
+  &__carousel_inner {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    transition: all .5s;
+  }
+
+  &__card-link {
+    position: relative;
+  }
+
+  &__card {
+    background-color: white;
+    height: 364px;
+    border-radius: 10px;
+    // box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  &__card-info {
+    border-top: 1px solid #e5eaeb;
+    height: 89px;
+    width: 100%;
+    padding: 15px 30px 20px;
+  }
+
+  &__card-text {
+    height: 100%;
+  }
+
+  &__info-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2d2d2d;
+  }
+
+  &__info-place {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #919191;
+  }
+
+  &__stream-img {
+    width: 32px;
+  }
+
+  &__slider {
+    position: absolute;
+    top: 45%;
+    right: -5.65%;
+    height: 75px;
+  }
+
+  &__penguin {
+    position: absolute;
+    bottom: 1.8%;
+    right: -6.2%;
+  }
+
+  @media (max-width: 1700px) {
+    padding-top: 51px;
+    margin-bottom: 89px;
+
+    &__header {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 55px;
+    }
+
+    &__cards-container {
+      margin-left: 1px;
+      max-width: 1076px;
+    }
+
+    &__carousel_inner {
+      gap: 33px;
+    }
+
+    &__card {
+      height: 274px;
+    }
+
+    &__card-img-container {
+      width: 163px;
+      height: 157px;
+    }
+
+    &__stream-img {
+      width: 23px;
+    }
+
+    &__card-info {
+      height: 73px;
+      padding: 15px 20px 16px;
+    }
+
+    &__info-title {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &__info-place {
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    &__slider {
+      top: 42%;
+      right: -4.4%;
+    }
+
+    &__penguin {
+      bottom: 1.5%;
+      right: -5.1%;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    padding-top: 30px;
+    margin-bottom: 46px;
+
+    &__header {
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    &__container {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__cards-container {
+      max-width: 534px;
+      width: 100%;
+      margin-left: 1px;
+      margin-right: 48px;
+    }
+
+    &__carousel_inner {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      gap: 20px;
+    }
+
+    &__card-link {
+      max-width: 256px;
+      width: 100%;
+      max-height: 298px;
+      height: 100%;
+    }
+
+    &__card {
+      height: 298px;
+      width: 256px;
+    }
+
+    &__card-img-container {
+      margin-top: 30px;
+      width: 170px;
+      height: 164px;
+    }
+
+    &__card-info {
+      height: 79px;
+      padding: 8px 0 28px 20px;
+    }
+
+    &__card-text {
+      height: 44px;
+    }
+
+    &__info-place {
+      font-size: 12px;
+      line-height: 14px;
+      margin-top: 9px;
+    }
+
+    &__stream-img {
+      position: absolute;
+      top: 5.5%;
+      right: 7.5%;
+      width: 24px;
+    }
+
+    &__slider {
+      right: -6.5%;
+      top: 45%;
+    }
+
+    &__penguin {
+      right: -8%;
+      bottom: 0.6%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 12px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+
+    &__header {
+      margin-bottom: 21px;
+    }
+
+    &__cards-container {
+      margin: 0;
+      margin-left: -41px;
+    }
+
+    &__carousel_inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__card-link {
+      max-width: 240px;
+      width: 100%;
+      max-height: 312px;
+      height: 100%;
+    }
+
+    &__card {
+      width: 240px;
+      height: 312px;
+    }
+
+    &__card-img-container {
+      margin-top: 50px;
+      width: 153px;
+      height: 148px;
+    }
+
+    &__card-info {
+      height: 85px;
+      padding: 11px 0 27px 17px;
+    }
+
+    &__info-place {
+      font-size: 13px;
+      line-height: 15px;
+      margin-top: 10px;
+    }
+
+    &__info-title {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 500;
+    }
+
+    &__stream-img {
+      right: 8.5%;
+      width: 27px;
+    }
+
+    &__slider {
+      right: 0%;
+      top: 42.9%;
+    }
+  }
+}

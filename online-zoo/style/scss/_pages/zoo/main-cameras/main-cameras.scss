@@ -1,0 +1,68 @@
+.main-cameras {
+
+  &__title-container {
+    padding-left: 2px;
+    margin-bottom: 7px;
+  }
+
+  &__title {
+    font-family: Rubik;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: $black;
+  }
+
+  &__camera {
+    border-radius: 20px;
+    max-width: 1325px;
+    width: 100%;
+    height: 604px;
+  }
+
+  @media (max-width: 1520px) {
+
+    &__title-container {
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    &__camera {
+      border-radius: 19px;
+      height: 597px;
+    }
+  }
+
+  @media (max-width: 900px) {
+
+    &__title-container {
+      padding-left: 0;
+      margin-top: -8px;
+      margin-bottom: 11px;
+    }
+    
+    &__title {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__camera {
+      border-radius: 10px;
+      width: 531px;
+      height: 315px;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    &__title-container {
+      margin-bottom: 14px;
+    }
+
+    &__camera {
+      width: 300px;
+      height: 178px;
+      border-radius: 6px;
+    }
+  }
+}

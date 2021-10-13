@@ -1,0 +1,82 @@
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  margin-top: 48px;
+  padding-left: 40px;
+  padding-right: 18px;
+  border-radius: 10px;
+
+  &__icons {
+    position: absolute;
+    right: 0;
+    top: -24px;
+    width: 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    &_card {
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__input {
+    border: none;
+    border-radius: 0;
+    height: 54px;
+    margin: 0;
+    padding: 0;
+    padding: 16px;
+
+    &_number,
+    &_date,
+    &_cvc {
+      width: 0;
+    }
+
+    &_number {
+      flex-basis: 55%;
+    }
+
+    &_date {
+      flex-basis: 25%;
+    }
+
+    &_cvc {
+      flex-basis: 20%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 7px 7px 7px 40px;
+    height: 40px;
+
+    &__input {
+      padding: 5px 7px;
+      font-size: 14px;
+      height: 100%;
+
+      &_number {
+        flex-basis: 40%s;
+      }
+      
+      &_date {
+        flex-basis: 40%;
+      }
+
+      &_cvc {
+        flex-basis: 20%;
+      }
+    }
+  }
+}

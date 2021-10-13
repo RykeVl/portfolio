@@ -1,0 +1,445 @@
+@import '../_helpers/colors.scss';
+
+.modal {
+  border-radius: 20px;
+  background-color: white;
+
+  &__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .6);
+    z-index: 1000;
+  }
+
+  &_signup,
+  &_login,
+  &_contact,
+  &_feedback,
+  &_donate {
+    width: 568px;
+  }
+
+  &_signup {
+    height: 774px;
+  }
+
+  &_login {
+    height: 635px;
+  }
+
+  &_contact,
+  &_feedback {
+    height: 712px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 46px 60px 42px;
+  }
+
+  &_donate {
+    height: 883px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 46px 60px;
+  }
+
+  &__header {
+    background-color: $bg;
+    height: 125px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-logo {
+      max-width: 78px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 26px;
+
+    &_donate {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__subtitle {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D2D2D;
+    margin-bottom: 32px;
+  }
+
+  &__container {
+    border-radius: 0 0 20px 20px;
+    padding: 32px 60px 46px;
+
+    &_signup {
+      height: 649px;
+    }
+
+    &_login {
+      height: 510px;
+    }
+  }
+
+  &__btns {
+    width: 100%;
+
+    &_choose {
+      height: 43px;
+    }
+
+    &_socials {
+      height: 54px;
+      display: flex;
+      justify-content: space-between;
+      margin: 32px 0 32px;
+    }
+  }
+
+  &_shadow {
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  &__form-label {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 8px;
+  }
+
+  &__form-input_text,
+  &__form-input_email,
+  &__form-input_password,
+  &__form-textarea,
+  &__select {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    height: 54px;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    &_number::-webkit-outer-spin-button,
+    &_number::-webkit-inner-spin-button {
+      appearance: none;
+    }
+
+    &_mb-0 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__form-textarea {
+    height: 264px;
+    resize: none;
+    font-family: 'Arial';
+    font-size: 16px;
+  }
+
+  &__select {
+    appearance: none;
+  }
+
+  &__form-input_checkbox {
+    height: 22px;
+    width: 22px;
+    margin-right: 22px;
+  }
+
+  &__form-input_submit {
+    background-color: $bg;
+    border-radius: 100px;
+    border: none;
+    width: 100%;
+    height: 54px;
+    font-family: 'Roboto Mono';
+    font-style: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: $white;
+    margin-top: 32px;
+  }
+
+  &__form-checkbox {
+    &-container {
+      margin-top: 28px;
+      font-family: 'Roboto';
+      font-size: 16px;
+      line-height: 19px;
+      color: #2d2d2d;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    &-link {
+      color: #2d2d2d;
+      transition: .1s;
+
+      &:hover {
+        color: $bambooTree;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__radio-container {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid $btnLined;
+
+    &_amount {
+      margin-top: 16px;
+      margin-bottom: 24px;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      justify-content: flex-start;
+    }
+  }
+
+  &__form-input_radio {
+    display: none;
+  }
+
+  &__form-label_radio {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      background-color: $white;
+    }
+
+    &_amount {
+      width: 74px;
+      border: 1px solid $btnLined;
+      border-radius: 10px;
+      background-color: unset;
+
+      &:not(:last-of-type) {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__form-input_radio:checked+&__form-label_radio {
+    background-color: $btnLined;
+    color: white;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+
+  &__text {
+    &_protected {
+      font-family: Roboto;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 14px;
+
+      color: #2D2D2D;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  &__icon {
+    &_shop-bag {
+      margin-right: 12px;
+      max-height: 14px;
+    }
+  }
+
+  @media (max-width: 900px) {
+
+    &_signup,
+    &_login,
+    &_contact,
+    &_feedback,
+    &_donate {
+      width: 454px;
+    }
+
+    &__container {
+
+      &_signup,
+      &_login {
+        padding: 32px 26px 46px 30px;
+      }
+    }
+
+    &_contact,
+    &_feedback {
+      padding: 46px 30px 42px;
+      justify-content: space-between;
+    }
+
+    &_donate {
+      padding: 46px 30px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &__btns {
+
+      &_choose {
+        display: flex;
+      }
+    }
+
+    &__btn {
+      font-size: 18px;
+      line-height: 21px;
+
+      &_socials {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    &_signup,
+    &_login,
+    &_contact,
+    &_feedback,
+    &_donate {
+      width: 320px;
+    }
+
+    &_signup {
+      height: 591px;
+    }
+
+    &_login {
+      height: 465px;
+    }
+
+    &_contact,
+    &_feedback {
+      height: 601px;
+      padding: 30px 10px;
+    }
+
+    &_donate {
+      height: 795px;
+      padding: 32px 14px;
+      justify-content: flex-start;
+    }
+
+    &__header {
+      display: none;
+    }
+
+    &__container {
+
+      &_signup,
+      &_login {
+        padding: 32px 10px;
+      }
+    }
+
+    &__btn {
+      font-size: 14px;
+      line-height: 16px;
+
+      &_socials {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    &__form-input_text,
+    &__form-input_email,
+    &__form-input_password,
+    &__select {
+      height: 40px;
+      margin-bottom: 24px;
+      padding: 5px 15px;
+    }
+
+    &__select_animals {
+      margin-bottom: 35px;
+    }
+
+    &__amount-container {
+      margin-top: 25px;
+    }
+
+    &__form-label_payments {
+      margin-bottom: 12px;
+    }
+
+    &__text {
+      justify-content: center;
+    }
+
+    &__form-textarea {
+      height: 199px;
+      margin-bottom: 0;
+    }
+
+    &__form-checkbox-text {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__form-input_submit {
+      height: 40px;
+    }
+
+    &__form-input_checkbox {
+      width: 25px;
+      height: 25px;
+      margin-right: 13px;
+    }
+
+    &__form-checkbox-container {
+      margin-top: 25px;
+    }
+
+    &__radio-container {
+      height: 40px;
+    }
+  }
+}

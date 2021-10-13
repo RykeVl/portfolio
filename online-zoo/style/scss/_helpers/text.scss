@@ -1,0 +1,105 @@
+@import 'colors';
+
+.h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 85px;
+
+  color: $heroText;
+
+  strong {
+    display: block;
+    font-size: 64px;
+    line-height: 76px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    margin-top: -1px;
+  }
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: $heroText;
+}
+
+.h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.top-menu {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: $white;
+}
+
+.btn-text {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.roboto {
+  font-family: 'Roboto';
+}
+
+@media (max-width: 1520px) {
+
+  .h1 {
+    font-size: 64px;
+    line-height: 76px;
+
+    strong {
+      font-size: 48px;
+      line-height: 57px;
+      margin-top: -3px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+
+  .h1 {
+    font-size: 36px;
+    line-height: 43px;
+
+    strong {
+      font-size: 30px;
+      line-height: 36px;
+      margin-top: -2px;
+    }
+  }
+
+  .h2 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 639px) {
+  .h1 {
+    font-size: 32px;
+    line-height: 48px;
+
+    strong {
+      font-size: 28px;
+      line-height: 33px;
+      margin-top: -6px;
+    }
+  }
+}
