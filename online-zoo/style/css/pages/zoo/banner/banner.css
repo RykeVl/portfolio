@@ -1,0 +1,45 @@
+.banner {
+  position: relative;
+  margin-top: 14px;
+  background-image: url("../../../assets/images/zoo-banner.png");
+  height: 425px;
+}
+.banner__btn {
+  position: absolute;
+  padding: 14px 78px;
+  left: 50%;
+  bottom: 43px;
+  transform: translate(-47.7%, -50%);
+}
+@media (max-width: 1200px) {
+  .banner {
+    margin-top: 92px;
+    background-image: url("../../../assets/images/zoo-banner-1200.png");
+    height: 346px;
+  }
+  .banner__btn {
+    bottom: 2px;
+  }
+}
+@media (max-width: 640px) {
+  .banner {
+    margin-top: -68px;
+    height: 402px;
+    background-image: url("../../../assets/images/zoo-banner-640.png");
+  }
+}
+@media (max-width: 340px) {
+  .banner {
+    margin-top: 13px;
+    height: 280px;
+    background-image: url("../../../assets/images/zoo-banner-320.png");
+  }
+  .banner__btn {
+    transform: translateX(-50%);
+    width: 242px;
+    padding: 11px 0;
+    bottom: 44px;
+  }
+}
+
+/*# sourceMappingURL=banner.css.map */

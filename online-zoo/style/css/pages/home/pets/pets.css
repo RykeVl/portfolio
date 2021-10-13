@@ -1,0 +1,243 @@
+.pets {
+  padding-top: 71px;
+  margin-bottom: 100px;
+}
+.pets__header {
+  margin-bottom: 66px;
+  margin-left: 9px;
+  margin-right: -8px;
+}
+.pets__cards-container {
+  position: relative;
+  margin-left: 8px;
+  margin-right: -8px;
+}
+.pets__carousel_outer {
+  position: relative;
+}
+.pets__carousel_inner {
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  transition: all 0.5s;
+}
+.pets__card-link {
+  position: relative;
+}
+.pets__card {
+  background-color: white;
+  height: 364px;
+  border-radius: 10px;
+}
+.pets__card-info {
+  border-top: 1px solid #e5eaeb;
+  height: 89px;
+  width: 100%;
+  padding: 15px 30px 20px;
+}
+.pets__card-text {
+  height: 100%;
+}
+.pets__info-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2d2d2d;
+}
+.pets__info-place {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #919191;
+}
+.pets__stream-img {
+  width: 32px;
+}
+.pets__slider {
+  position: absolute;
+  top: 45%;
+  right: -5.65%;
+  height: 75px;
+}
+.pets__penguin {
+  position: absolute;
+  bottom: 1.8%;
+  right: -6.2%;
+}
+@media (max-width: 1700px) {
+  .pets {
+    padding-top: 51px;
+    margin-bottom: 89px;
+  }
+  .pets__header {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 55px;
+  }
+  .pets__cards-container {
+    margin-left: 1px;
+    max-width: 1076px;
+  }
+  .pets__carousel_inner {
+    gap: 33px;
+  }
+  .pets__card {
+    height: 274px;
+  }
+  .pets__card-img-container {
+    width: 163px;
+    height: 157px;
+  }
+  .pets__stream-img {
+    width: 23px;
+  }
+  .pets__card-info {
+    height: 73px;
+    padding: 15px 20px 16px;
+  }
+  .pets__info-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .pets__info-place {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .pets__slider {
+    top: 42%;
+    right: -4.4%;
+  }
+  .pets__penguin {
+    bottom: 1.5%;
+    right: -5.1%;
+  }
+}
+@media (max-width: 1199px) {
+  .pets {
+    padding-top: 30px;
+    margin-bottom: 46px;
+  }
+  .pets__header {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .pets__container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .pets__cards-container {
+    max-width: 534px;
+    width: 100%;
+    margin-left: 1px;
+    margin-right: 48px;
+  }
+  .pets__carousel_inner {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+  .pets__card-link {
+    max-width: 256px;
+    width: 100%;
+    max-height: 298px;
+    height: 100%;
+  }
+  .pets__card {
+    height: 298px;
+    width: 256px;
+  }
+  .pets__card-img-container {
+    margin-top: 30px;
+    width: 170px;
+    height: 164px;
+  }
+  .pets__card-info {
+    height: 79px;
+    padding: 8px 0 28px 20px;
+  }
+  .pets__card-text {
+    height: 44px;
+  }
+  .pets__info-place {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 9px;
+  }
+  .pets__stream-img {
+    position: absolute;
+    top: 5.5%;
+    right: 7.5%;
+    width: 24px;
+  }
+  .pets__slider {
+    right: -6.5%;
+    top: 45%;
+  }
+  .pets__penguin {
+    right: -8%;
+    bottom: 0.6%;
+  }
+}
+@media (max-width: 600px) {
+  .pets {
+    padding-top: 12px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+  .pets__header {
+    margin-bottom: 21px;
+  }
+  .pets__cards-container {
+    margin: 0;
+    margin-left: -41px;
+  }
+  .pets__carousel_inner {
+    grid-template-columns: 1fr;
+  }
+  .pets__card-link {
+    max-width: 240px;
+    width: 100%;
+    max-height: 312px;
+    height: 100%;
+  }
+  .pets__card {
+    width: 240px;
+    height: 312px;
+  }
+  .pets__card-img-container {
+    margin-top: 50px;
+    width: 153px;
+    height: 148px;
+  }
+  .pets__card-info {
+    height: 85px;
+    padding: 11px 0 27px 17px;
+  }
+  .pets__info-place {
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 10px;
+  }
+  .pets__info-title {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  .pets__stream-img {
+    right: 8.5%;
+    width: 27px;
+  }
+  .pets__slider {
+    right: 0%;
+    top: 42.9%;
+  }
+}
+
+/*# sourceMappingURL=pets.css.map */
