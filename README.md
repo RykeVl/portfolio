@@ -8,6 +8,7 @@
 - Sort winners table by wins count and time columns
 
 [Server](https://github.com/mikhama/async-race-api)
+
 [Deployment](https://rykevl.github.io/portfolio/async-race/dist/)
 
 ### Screenshots
