@@ -1,6 +1,6 @@
 # Photo Filter
 
-Features:
+### Features:
 - Apply 5 different CSS filters to image
 - Abilty to load and save your image
 
