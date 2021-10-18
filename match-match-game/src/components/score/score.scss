@@ -1,0 +1,75 @@
+.score-layout {
+  height: fit-content;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 50px 60px;
+
+  h2 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: column nowrap;
+
+    li {
+      box-sizing: border-box;
+      width: 850px;
+      height: 45px;
+      padding-bottom: 5px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Roboto';
+
+      border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+      margin-bottom: 20px;
+
+      .user-data {
+        display: flex;
+        flex-flow: column nowrap;
+
+        color: #333333;
+
+        .user-name {
+          font-size: 0.875rem;
+          font-weight: 500;
+          line-height: 21px;
+          letter-spacing: 0.1px;
+        }
+
+        .user-email {
+          font-size: 0.75rem;
+          line-height: 15px;
+          letter-spacing: 0.4px;
+        }
+      }
+
+      .user-score {
+        font-size: 0.875rem;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+
+        .score-span {
+          color: rgba(0, 0, 0, 0.87);
+        }
+
+        .score-points {          
+          color: #2196F3;
+        }
+      }
+    }
+  }
+}
