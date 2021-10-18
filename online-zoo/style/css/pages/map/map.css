@@ -1,17 +1,183 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import '../../_helpers/colors.scss';
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\pages\map\map.scss 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import '../../_helpers/colors.scss';\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\pages\\map\\map.scss 2:9  root stylesheet";
+.zoom {
+  position: absolute;
+  bottom: 2.75%;
+  right: 4.5%;
+  width: 80px;
 }
+.zoom__in, .zoom__out {
+  width: 33px;
+  height: 33px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: #7fb3b6;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: 0.15s;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+.zoom__in:hover, .zoom__out:hover {
+  transform: scale(1.15);
+}
+.zoom__icon {
+  max-height: 20px;
+  max-width: 20px;
+}
+@media (max-width: 1520px) {
+  .zoom {
+    right: 3.5%;
+  }
+}
+@media (max-width: 900px) {
+  .zoom {
+    right: 5.5%;
+    bottom: 3.75%;
+  }
+}
+@media (max-width: 600px) {
+  .zoom {
+    right: 6.45%;
+    bottom: 4.5%;
+  }
+}
+
+.color_white {
+  color: #c5e1e6;
+}
+
+.color_black {
+  color: #0d444d;
+}
+
+.background_bg {
+  background-color: #2a8086;
+}
+
+.map {
+  position: absolute;
+  height: 916px;
+  touch-action: none;
+}
+.map__title-container {
+  padding: 26px 0 13px 219px;
+}
+.map__container {
+  position: relative;
+  height: 973px;
+  padding-top: 50px;
+  padding-bottom: 31px;
+  overflow: hidden;
+  background-color: #2a8086;
+}
+.map__image {
+  width: inherit;
+  height: inherit;
+}
+.map__animal {
+  position: absolute;
+  width: 90px;
+  height: 83px;
+  background-color: #c5e1e6;
+  box-shadow: 0px 4px 10px #c5e1e6;
+  transition: 0.3s;
+}
+.map__animal_pandas {
+  top: 43.5%;
+  right: 23.6%;
+}
+.map__animal_eagles {
+  top: 40%;
+  left: 12%;
+}
+.map__animal_gorillas {
+  bottom: 33%;
+  right: 47%;
+}
+.map__animal_aligators {
+  top: 47.5%;
+  left: 22.9%;
+}
+.map__animal:hover {
+  box-shadow: 0px 4px 20px 25px #c5e1e6;
+}
+.map__animal:hover .map__animal-tooltip {
+  visibility: visible;
+}
+.map__animal:focus {
+  outline: none;
+}
+.map__animal-tooltip {
+  visibility: hidden;
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 410px;
+  height: 88px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  background-color: white;
+}
+.map__animal-tooltip-text {
+  text-align: center;
+  color: #0d444d;
+}
+.map__animal-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 20px solid white;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  filter: drop-shadow(0px 2px 30px rgba(0, 0, 0, 0.06));
+}
+@media (max-width: 1520px) {
+  .map {
+    height: 686px;
+  }
+  .map__title-container {
+    padding: 32px 0 13px 29px;
+  }
+  .map__container {
+    height: 789px;
+    padding-top: 0;
+  }
+}
+@media (max-width: 900px) {
+  .map {
+    height: 397px;
+  }
+  .map__title-container {
+    padding: 31px 0 13px 19px;
+  }
+  .map__container {
+    height: 479px;
+  }
+  .map__animal {
+    height: 61px;
+    width: 61px;
+  }
+  .map__animal:hover {
+    box-shadow: 0px 4px 20px 10px #c5e1e6;
+  }
+  .map__animal-tooltip {
+    width: 160px;
+    height: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .map {
+    height: 373px;
+  }
+  .map__title-container {
+    display: none;
+  }
+  .map__container {
+    height: 490px;
+  }
+}
+
+/*# sourceMappingURL=map.css.map */
