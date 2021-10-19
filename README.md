@@ -5,3 +5,5 @@
 - practice and test modes
 - pronunciation for every word
 - statistics (currently developing)
+
+[Deployment](https://rykevl.github.io/portfolio/english-for-kids/dist/)
