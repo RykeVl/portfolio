@@ -2,8 +2,8 @@
 
 ### Features:
 - 8 different categories to learn english words
-- practice and test modes
-- pronunciation for every word
-- statistics (currently developing)
+- Practice and test modes
+- Pronunciation for every word
+- Statistics (currently developing)
 
 [Deployment](https://rykevl.github.io/portfolio/english-for-kids/dist/)
