@@ -1,0 +1,58 @@
+.game-layout {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .upper-block,
+  .main-block,
+  .bottom-block {
+    width: 100%;
+    display: flex;
+  }
+
+  .upper-block,
+  .bottom-block {
+    max-height: 100px;
+    min-height: 100px;
+
+    @media screen and (max-width:820px) {
+      min-height: 60px;
+      max-height: 60px;
+    }
+  }
+
+  .upper-block {
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+
+  .main-block {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .game-cards {
+      padding: 50px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+
+      @media screen and (max-width:1050px) {
+        grid-gap: 10px;
+      }
+
+      @media screen and (max-width:820px) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+
+  .bottom-block {
+    justify-content: center;
+  }
+}

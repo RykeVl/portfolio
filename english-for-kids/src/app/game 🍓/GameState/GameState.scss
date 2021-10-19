@@ -1,0 +1,33 @@
+.upper-block {
+  .answers {
+    width: 100%;
+
+    .history-showcase {
+      height: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+
+  .state-btn-container {
+    display: flex;
+
+    .state-btn {
+      border: none;
+      font-size: 1.5rem;
+      padding: 15px;
+      min-width: 160px;
+      text-transform: uppercase;
+    }
+
+    .game-state {
+      background-color: orange;
+    }
+
+    .practice-state {
+      background-color: palegreen;
+    }
+  }
+}
