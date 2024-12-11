@@ -160,7 +160,7 @@ body {
 }
 
 .hero {
-  background-image: url(../assets/hero.png);
+  background-image: url(../assets/hero.avif), url(../assets/hero.webp), url(../assets/hero.png);
   height: 779px;
   max-width: 1440px;
   margin: auto;
@@ -342,7 +342,7 @@ body {
 }
 
 footer {
-  background-image: url(../assets/footer.jpg);
+  background-image: url(../assets/footer.avif), url(../assets/footer.webp), url(../assets/footer.jpg);
   height: 359px;
   max-width: 1440px;
   margin: auto;
