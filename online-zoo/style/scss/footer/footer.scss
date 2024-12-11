@@ -1,0 +1,118 @@
+@import '../helpers/colors.scss';
+
+.footer {
+  height: 200px;
+  background-color: $footerBg;
+
+  &__container {
+    padding-left: 220px;
+    padding-right: 73px;
+  }
+
+  &__nav {
+    max-width: 698px;
+  }
+
+  &__logo {
+    margin-right: 77px;
+  }
+
+  &__creds {
+    max-width: 300px;
+    padding-right: 5px;
+  }
+
+  &__creds-list-item {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    text-transform: uppercase;
+    text-align: end;
+
+    &:last-of-type {
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 1520px) {
+    height: 121px;
+
+    &__container {
+      padding: 20px 30px;
+    }
+
+    &__nav {
+      max-width: 661px;
+    }
+
+    &__logo {
+      margin-right: 80px;
+    }
+
+    &__creds {
+      padding-right: 0;
+      padding-bottom: 26px;
+    }
+
+    &__creds-list-item {
+      font-size: 12px;
+      line-height: 14px;
+
+      &:last-of-type {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    height: 78px;
+
+    &__container {
+      padding: 0 12px;
+    }
+
+    &__nav {
+      justify-content: flex-start;
+      max-width: 50px;
+    }
+
+    &__logo {
+      margin: 4px 0 0 8px;
+    }
+
+    &__logo-img {
+      max-width: 49px;
+    }
+
+    .nav__list {
+      display: none;
+    }
+
+    &__creds {
+      max-width: 180px;
+      width: 100%;
+      padding-bottom: 5px;
+    }
+
+    &__creds-list-item {
+      font-size: 10px;
+      line-height: 12px;
+
+      &:last-of-type {
+        margin-top: 4px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    &__container {
+      padding-right: 8px;
+    }
+
+    &__creds {
+      padding-bottom: 3px;
+    }
+  }
+}

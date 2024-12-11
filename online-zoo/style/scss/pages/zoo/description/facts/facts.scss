@@ -1,0 +1,59 @@
+.facts {
+
+  &__list {
+    padding-top: 1px;
+    margin-left: 22px;
+    max-width: 576px;
+  }
+
+  &__list-item {
+    position: relative;
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+
+    &::before {
+      content: url('../../../assets/icons/facts-marker.svg');
+      position: absolute;
+      left: -23px;
+      top: -1px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (max-width: 1520px) {
+
+    &__list {
+      margin-left: 27px;
+    }
+
+    &__list-item {
+
+      &::before {
+        left: -27px;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    &__list-item {
+      font-size: 12px;
+      line-height: 20px;
+
+      &::before {
+        left: -23px;
+        top: 5px;
+      }
+    }
+  }
+}

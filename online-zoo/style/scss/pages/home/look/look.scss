@@ -1,0 +1,141 @@
+.look {
+  padding-top: 100px;
+  padding-bottom: 117px;
+
+  &__title {
+    margin-left: 8px;
+    text-transform: uppercase;
+  }
+
+  &__imgs-container {
+    position: relative;
+    padding-top: 69px;
+    max-width: 1306px;
+    margin-left: 9px;
+  }
+
+  &__carousel_outer {
+    position: relative;
+  }
+
+  &__carousel_inner {
+    position: absolute;
+    width: 100%;
+    transition: .5s;
+  }
+
+  &__link {
+    position: relative;
+  }
+
+  &__img-container {
+    position: relative;
+  }
+
+  &__img-title {
+    position: absolute;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #2d2d2d;
+    bottom: -26px;
+    left: 50%;
+    transform: translateX(-56%);
+  }
+
+  &__slider {
+    position: absolute;
+    right: -8.2%;
+    bottom: 6%;
+    height: 76px;
+  }
+
+  @media (max-width: 1520px) {
+    padding-top: 52px;
+    padding-bottom: 65px;
+
+    &__title {
+      margin-left: 0;
+    }
+
+    &__imgs-container {
+      padding-top: 48px;
+      max-width: 1002px;
+      margin-left: 13px;
+    }
+
+    &__slider {
+      position: absolute;
+      right: -10.8%;
+      bottom: 7%;
+      height: 76px;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    padding-bottom: 41px;
+
+    &__title {
+      margin-left: 20px;
+    }
+
+    &__imgs-container {
+      padding-top: 39px;
+      margin-left: 15px;
+      max-width: 517px;
+      margin: auto;
+    }
+
+    &__slider {
+      right: -15.4%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    &__imgs-container {
+      margin-left: 15px;
+    }
+  }
+
+  @media (max-width: 620px) {
+    padding-top: 42px;
+    padding-bottom: 90px;
+
+    &__title {
+      margin-left: 10px;
+      margin-bottom: 13px;
+    }
+
+    &__imgs-container {
+      padding-top: 26px;
+      height: 282px;
+      margin-left: auto;
+      max-width: 299px;
+    }
+
+    &__carousel_inner {
+      display: grid;
+      gap: 81px 15px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__img-container {
+      margin: auto;
+    }
+
+    &__slider {
+      left: 48%;
+      bottom: -28%;
+      width: fit-content;
+      transform: translate(-50%, 50%);
+    }
+  }
+
+  @media (max-width: 320px) {
+    &__imgs-container {
+      margin-left: 13px;
+    }
+  }
+}

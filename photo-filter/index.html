@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>photo-filter</title>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/range.css">
+</head>
+
+<body>
+  <header>
+    <h1>Photo-filter</h1>
+  </header>
+
+  <main>
+    <div class="filters">
+      <div class="filter-block">
+        <label class="filter-title" for="sepia">Blur: </label>
+        <form class="filter-form filter-blur" id="blur" action="">
+          <input class="filter-range" type="range" name="blur-range" min="0" max="10" step="1" data-sizing="px">
+          <input class="filter-number" type="number" disabled>
+        </form>
+      </div>
+
+      <div class="filter-block">
+        <label class="filter-title" for="invert">Invert: </label>
+        <form class="filter-form filter-invert" id="invert" action="">
+          <input class="filter-range" type="range" name="invert-range" min="0" max="100" data-sizing="%">
+          <input class="filter-number" type="number" disabled>
+        </form>
+      </div>
+
+      <div class="filter-block">
+        <label class="filter-title" for="sepia">Sepia: </label>
+        <form class="filter-form filter-sepia" id="sepia" action="">
+          <input class="filter-range" type="range" name="sepia-range" min="0" max="100" data-sizing="%">
+          <input class="filter-number" type="number" disabled>
+        </form>
+      </div>
+
+      <div class="filter-block">
+        <label class="filter-title" for="saturate">Saturate: </label>
+        <form class="filter-form filter-saturate" id="saturate" action="">
+          <input class="filter-range" type="range" name="saturate-range" min="0" max="200" data-sizing="%">
+          <input class="filter-number" type="number" disabled>
+        </form>
+      </div>
+
+      <div class="filter-block">
+        <label class="filter-title" for="hue">Hue rotate: </label>
+        <form class="filter-form filter-hue" id="hue" action="">
+          <input class="filter-range" type="range" name="hue-range" min="0" max="360" data-sizing="deg">
+          <input class="filter-number" type="number" disabled>
+        </form>
+      </div>
+    </div>
+    <div class="image">
+      <div class="image-btns">
+        <button id="reset" class="function-btn">Reset</button>
+        <label for="load-file" class="function-btn">
+          Load picture
+          <input id="load-file" type="file" class="function-btn"
+            accept="image.png, image.jpg, image.jpeg, image.gif"></input>
+        </label>
+        <button id="download" class="function-btn">Save picture</button>
+      </div>
+      <img id="targetImg" src="" alt="test image">
+      <canvas></canvas>
+    </div>
+  </main>
+
+  <footer>
+    <button class="fullscreen">
+    </button>
+    <div class="github">
+      <a href="https://github.com/RykeVl">
+        <img src="assets/svg/github.svg" alt="github">
+        <span>RykeVl</span>
+      </a>
+      <span>2021</span>
+    </div>
+    <div>
+      <a href="https://rs.school/js/">
+        <img src="assets/svg/rss.svg" alt="RSSchool">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js">
+  </script>
+</body>
+
+</html>

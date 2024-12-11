@@ -1,0 +1,200 @@
+.color_white {
+  color: #c5e1e6;
+}
+
+.color_black {
+  color: #0d444d;
+}
+
+.background_bg {
+  background-color: #2a8086;
+}
+
+.btn {
+  border-radius: 100px;
+  transition: 0.3s;
+}
+.btn_white {
+  background: #FFFFFF;
+  letter-spacing: -0.9px;
+  box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+}
+.btn_white:hover {
+  box-shadow: 0px 2px 50px #d7f3f7;
+}
+.btn_main_watch {
+  width: 258px;
+  height: 52px;
+  margin-left: -1px;
+}
+.btn_main_donate {
+  letter-spacing: 0.1em !important;
+  position: absolute;
+}
+.btn__icon {
+  margin-right: 5px;
+}
+.btn__icon_modal {
+  margin-right: 15px;
+}
+.btn_transparent {
+  border: 2px solid #19707d;
+  background-color: transparent;
+  color: #19707d;
+  letter-spacing: 1.7px;
+}
+.btn_transparent:hover {
+  background-color: #c5e1e6;
+}
+.btn_pets_full {
+  width: 331px;
+  height: 52px;
+}
+.btn_solid {
+  letter-spacing: -0.85px;
+  background-color: #c5e1e6;
+  filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+}
+.btn_solid:hover {
+  filter: drop-shadow(0px 2px 20px #d7f3f7);
+}
+.btn_pay_full {
+  width: 356px;
+  height: 52px;
+}
+.btn_testimonials_full {
+  width: 255px;
+  height: 52px;
+}
+.btn_choose {
+  background-color: unset;
+  height: 100%;
+  width: 50%;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #0d444d;
+  border-bottom: 2px solid #c5e1e6;
+  border-radius: 0;
+  transition: 0.3s;
+}
+.btn_choose_active {
+  border-bottom-color: #2a8086;
+}
+.btn_choose:hover {
+  background-color: #c5e1e6;
+}
+.btn_socials {
+  border-radius: 10px;
+  width: 216px;
+  background-color: white;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 19px;
+  color: #2d2d2d;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.btn_socials:hover {
+  background-color: #c5e1e6;
+}
+@media (max-width: 1520px) {
+  .btn_main_watch {
+    width: 258px;
+    height: 52px;
+    margin-left: 1px;
+  }
+  .btn_transparent {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .btn_pets_full {
+    width: 303px;
+    height: 40px;
+  }
+  .btn_pay_full {
+    width: 289px;
+    height: 40px;
+  }
+  .btn_pay_tablet {
+    width: 120px;
+    height: 37px;
+  }
+  .btn_testimonials_full {
+    width: 236px;
+    height: 40px;
+  }
+}
+@media (max-width: 1050px) {
+  .btn_main_watch, .btn_main_donate {
+    height: 37px;
+  }
+  .btn_main_watch {
+    width: 170px;
+  }
+  .btn_main_donate {
+    width: 174px;
+    right: -111%;
+  }
+}
+@media (max-width: 900px) {
+  .btn {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .btn__icon {
+    max-width: 19px;
+  }
+  .btn_pets_full {
+    letter-spacing: 0.1em;
+    width: 269px;
+    height: 37px;
+  }
+  .btn_testimonials_full {
+    width: 210px;
+    height: 37px;
+  }
+  .btn_choose {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .btn_socials {
+    width: 189px;
+  }
+}
+@media (max-width: 600px) {
+  .btn_main_watch, .btn_main_donate {
+    width: 139px;
+    height: 40px;
+  }
+  .btn_main_watch {
+    margin-left: 2px;
+  }
+  .btn_main_donate {
+    right: -113.5%;
+  }
+  .btn_pets_mobile {
+    margin-top: 52px;
+    margin-right: 10px;
+    width: 269px;
+    height: 37px;
+    letter-spacing: 1.45px;
+  }
+  .btn_pay_mobile {
+    width: 300px;
+    height: 40px;
+    margin-top: 97px;
+    margin-left: 1px;
+  }
+  .btn_testimonials_mobile {
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    margin-top: 22px;
+  }
+}
+
+/*# sourceMappingURL=btn.css.map */

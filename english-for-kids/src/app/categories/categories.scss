@@ -1,0 +1,25 @@
+.categories {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  @media screen and (max-width:990px) {
+    ul {
+      grid-gap: 10px;
+    }
+  }
+
+  @media screen and (max-width:740px) {
+    ul {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+

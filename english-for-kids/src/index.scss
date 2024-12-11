@@ -1,0 +1,19 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+}

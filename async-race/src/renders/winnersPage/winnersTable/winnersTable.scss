@@ -1,0 +1,34 @@
+@import '../../../styles/colors.scss';
+
+.winners-table {
+  border: 3px solid $mainWhite;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.th, .td {
+  border: 1px solid $mainWhite;
+  font-size: 1.25rem;
+  padding: 5px 10px;
+}
+
+.th {  
+  color: red;
+  text-transform: uppercase;  
+  font-weight: 500;
+}
+
+.table-cell {
+  color: $mainWhite;
+}
+
+.car-cell {
+  svg {
+    max-width: 4.75rem;
+    max-height: 1.25rem;
+  }
+}
+
+.clickable:hover {
+  cursor: pointer;
+}

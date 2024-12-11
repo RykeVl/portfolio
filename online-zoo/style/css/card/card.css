@@ -1,0 +1,70 @@
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  margin-top: 48px;
+  padding-left: 40px;
+  padding-right: 18px;
+  border-radius: 10px;
+}
+.card__icons {
+  position: absolute;
+  right: 0;
+  top: -24px;
+  width: 102px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__icon_card {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+.card__input {
+  border: none;
+  border-radius: 0;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+  padding: 16px;
+}
+.card__input_number, .card__input_date, .card__input_cvc {
+  width: 0;
+}
+.card__input_number {
+  flex-basis: 55%;
+}
+.card__input_date {
+  flex-basis: 25%;
+}
+.card__input_cvc {
+  flex-basis: 20%;
+}
+@media (max-width: 600px) {
+  .card {
+    padding: 7px 7px 7px 40px;
+    height: 40px;
+  }
+  .card__input {
+    padding: 5px 7px;
+    font-size: 14px;
+    height: 100%;
+  }
+  .card__input_number {
+    flex-basis: 40% s;
+  }
+  .card__input_date {
+    flex-basis: 40%;
+  }
+  .card__input_cvc {
+    flex-basis: 20%;
+  }
+}
+
+/*# sourceMappingURL=card.css.map */

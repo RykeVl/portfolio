@@ -1,0 +1,149 @@
+@import './zoom/zoom.scss';
+@import '../../helpers/colors.scss';
+
+.map {
+  position: absolute;
+  height: 916px;
+  touch-action: none;
+
+  &__title-container {
+    padding: 26px 0 13px 219px;
+  }
+
+  &__container {
+    position: relative;
+    height: 973px;
+    padding-top: 50px;
+    padding-bottom: 31px;
+    overflow: hidden;
+    background-color: $bg;
+  }
+
+  &__image {
+    width: inherit;
+    height: inherit;
+  }
+
+  &__animal {
+    position: absolute;
+    width: 90px;
+    height: 83px;
+    background-color: $white;
+    box-shadow: 0px 4px 10px $white;
+    transition: .3s;
+
+    &_pandas {
+      top: 43.5%;
+      right: 23.6%;
+    }
+
+    &_eagles {
+      top: 40%;
+      left: 12%;
+    }
+
+    &_gorillas {
+      bottom: 33%;
+      right: 47%;
+    }
+
+    &_aligators {
+      top: 47.5%;
+      left: 22.9%;
+    }
+
+    &:hover {
+      box-shadow: 0px 4px 20px 25px $white;
+
+      .map__animal-tooltip {
+        visibility: visible;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__animal-tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 410px;
+    height: 88px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    background-color: white;
+
+    &-text {
+      text-align: center;
+      color: $black;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-top: 20px solid white;
+      border-bottom: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-left: 20px solid transparent;
+      filter: drop-shadow(0px 2px 30px rgba(0, 0, 0, 0.06));
+    }
+  }
+
+  @media (max-width: 1520px) {
+    height: 686px;
+
+    &__title-container {
+      padding: 32px 0 13px 29px;
+    }
+
+    &__container {
+      height: 789px;
+      padding-top: 0;
+    }
+  }
+
+  @media (max-width: 900px) {
+    height: 397px;
+
+    &__title-container {
+      padding: 31px 0 13px 19px;
+    }
+    
+    &__container {
+      height: 479px;
+    }
+
+    &__animal {
+      height: 61px;
+      width: 61px;
+
+      &:hover {
+        box-shadow: 0px 4px 20px 10px $white;
+      }
+    }
+
+    &__animal-tooltip {
+      width: 160px;
+      height: 60px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    height: 373px;
+
+    &__title-container {
+      display: none;
+    }
+    
+    &__container {
+      height: 490px;
+    }
+  }
+}

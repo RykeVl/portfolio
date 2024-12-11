@@ -1,0 +1,107 @@
+.color_white {
+  color: #c5e1e6;
+}
+
+.color_black {
+  color: #0d444d;
+}
+
+.background_bg {
+  background-color: #2a8086;
+}
+
+.side-cameras {
+  position: relative;
+}
+.side-cameras__title-container {
+  padding-left: 2px;
+}
+.side-cameras__title {
+  color: #0d444d;
+  font-family: Rubik;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+}
+.side-cameras__cameras-container {
+  margin-top: 7px;
+  height: 240px;
+  max-width: 1204px;
+}
+.side-cameras__camera {
+  border-radius: 18px;
+  width: 380px;
+  height: 240px;
+}
+.side-cameras__slider {
+  position: absolute;
+  height: 73px;
+  right: 4.1%;
+  top: 41.8%;
+}
+.side-cameras__carousel_outer {
+  position: relative;
+}
+.side-cameras__carousel_inner {
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+}
+@media (max-width: 1520px) {
+  .side-cameras__cameras-container {
+    max-width: 939px;
+    height: 194px;
+  }
+  .side-cameras__camera {
+    border-radius: 16px;
+    width: 295px;
+    height: 194px;
+  }
+  .side-cameras__slider {
+    right: 2%;
+    top: 42%;
+  }
+}
+@media (max-width: 900px) {
+  .side-cameras {
+    margin-left: -1px;
+  }
+  .side-cameras__title-container {
+    padding: 0;
+  }
+  .side-cameras__title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .side-cameras__cameras-container {
+    margin-top: 5px;
+    max-width: 479px;
+    height: 154px;
+  }
+  .side-cameras__camera {
+    border-radius: 13px;
+    width: 235px;
+    height: 154px;
+  }
+  .side-cameras__slider {
+    right: 3.3%;
+    top: 31%;
+  }
+}
+@media (max-width: 600px) {
+  .side-cameras__cameras-container {
+    max-width: 271px;
+    height: 85px;
+  }
+  .side-cameras__camera {
+    width: 130px;
+    height: 85px;
+  }
+  .side-cameras__slider {
+    height: 21px;
+    top: 47%;
+    right: 0;
+  }
+}
+
+/*# sourceMappingURL=side-cameras.css.map */

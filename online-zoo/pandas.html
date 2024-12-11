@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Roboto+Mono:wght@400;500&family=Rubik:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style/css/reset.css">
+  <link rel="stylesheet" href="./style/css/pages/zoo.css">
+  <title>online-zoo | pandas</title>
+</head>
+
+<body>
+  <header class="header flex flex-row-wrap">
+    <div
+      class="header__container header__container_full container-1920 width-100 flex flex-row-nowrap justify-content-space-between">
+      <nav class="header__nav header__nav_full nav flex flex-center">
+        <a class="header__logo nav__link link top-menu" href="./index.html">
+          <img class="header__logo-img" src="./assets/icons/logo.svg" alt="logo">
+        </a>
+
+        <ul class="nav__list list flex flex-row-nowrap flex-sb-center width-100 show-after-900-f">
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu" href="./index.html">
+              about
+            </a>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu" href="./map.html">
+              MAP
+            </a>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <a class="nav__link nav__link_active link link_classic top-menu" href="./pandas.html">
+              Zoos
+            </a>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <button class="nav__link nav__pseudo-link link link_classic top-menu btn btn_modal_contact">
+              contact us
+            </button>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu"
+              href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">
+              design
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__features-container flex width-100">
+        <ul class="header__features list flex flex-row-nowrap flex-sb-center">
+          <li class="header__features-item list__item show-before-900-ib">
+            <button class="header__features-button header__features-button_burger">
+              <img src="./assets/icons/burger.svg" alt="burger button">
+            </button>
+          </li>
+
+          <li class="header__features-item list__item search show-after-900-ib">
+            <button class="header__features-button header__features-button_search search__button roboto color_white">
+              <img src="./assets/icons/search.svg" alt="search">
+            </button>
+            <input type="text" class="header__features-button_search-input search__input search__input_inactive">
+          </li>
+
+          <li class="header__features-item list__item show-900-1520-ib">
+            <button class="header__features-button header__features-button_login-1200 btn btn_login btn_modal_login">
+              <img src="./assets/icons/login-1200.svg" alt="login">
+            </button>
+          </li>
+
+          <li class="header__features-item list__item show-after-1520-ib">
+            <button class="header__features-button header__features-button_login roboto color_white btn_modal_login">
+              Log in
+            </button>
+          </li>
+
+          <li class="header__features-item header__features-item_border_round list__item show-after-1520-ib">
+            <button class="header__features-button header__features-button_signup roboto color_white btn_modal_signup">
+              Sign up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="header__container header__container_mobile width-100">
+      <nav class="header__nav header__nav_mobile nav flex flex-center">
+        <ul class="nav__list list flex flex-column-nowrap flex-center show-before-900-f width-100">
+          <li class="nav__list-item-mobile list__item flex flex-center width-100">
+            <a class="nav__link nav__link-mobile link link_classic top-menu" href="./index.html">
+              about
+            </a>
+          </li>
+
+          <li class="nav__list-item-mobile list__item flex flex-center width-100">
+            <a class="nav__link nav__link-mobile link link_classic top-menu" href="./map.html">
+              MAP
+            </a>
+          </li>
+
+          <li class="nav__list-item-mobile list__item flex flex-center width-100">
+            <a class="nav__link nav__link-mobile link link_classic top-menu" href="../zoo/pandas.html">
+              Zoos
+            </a>
+          </li>
+
+          <li class="nav__list-item-mobile list__item flex flex-center width-100">
+            <button
+              class="nav__link nav__link-mobile nav__pseudo-link link link_classic top-menu btn btn_modal_contact">
+              contact us
+            </button>
+          </li>
+
+          <li class="nav__list-item-mobile list__item flex flex-center width-100">
+            <a class="nav__link nav__link-mobile link link_classic top-menu"
+              href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">
+              design
+            </a>
+          </li>
+
+          <li class="nav__list-item-mobile list__item flex flex-center width-100">
+            <button class="nav__link nav__link-mobile nav__pseudo-link link link_classic top-menu btn btn_modal_login">
+              my account
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <aside class="zoo__aside aside_mobile show-before-600-b">
+    <nav class="zoo_nav nav">
+      <ui class="zoo__nav-list nav__list list">
+        <li class="zoo__nav-list-item list__item">
+          <div class="zoo__nav-container">
+            <a class="zoo__nav-link zoo__nav-link_active" href="./pandas.html">
+              <img class="zoo__nav-link-image rotate-border__outer" src="./assets/images/look-pandas.png" alt="pandas">
+
+              <p class="zoo__nav-link-text">
+                Pandas
+              </p>
+            </a>
+
+            <button class="zoo__nav-expand">
+              <img class="zoo__nav-expand-img" src="./assets/icons/nav-expand.svg" alt="expand">
+            </button>
+          </div>
+        </li>
+
+        <li class="zoo__nav-list-item list__item">
+          <div class="zoo__nav-container">
+            <a class="zoo__nav-link" href="./eagles.html">
+              <img class="zoo__nav-link-image rotate-border__outer" src="./assets/images/look-eagles.png" alt="eagles">
+
+              <p class="zoo__nav-link-text">
+                Eagles
+              </p>
+            </a>
+          </div>
+        </li>
+
+        <li class="zoo__nav-list-item list__item">
+          <div class="zoo__nav-container">
+            <a class="zoo__nav-link" href="./gorillas.html">
+              <img class="zoo__nav-link-image rotate-border__outer" src="./assets/images/look-gorillas.png"
+                alt="gorillas">
+
+              <p class="zoo__nav-link-text">
+                Gorillas
+              </p>
+            </a>
+          </div>
+        </li>
+
+        <li class="zoo__nav-list-item list__item">
+          <div class="zoo__nav-container">
+            <a class="zoo__nav-link" href="./aligators.html">
+              <img class="zoo__nav-link-image rotate-border__outer" src="./assets/images/look-aligators.png"
+                alt="aligators">
+
+              <p class="zoo__nav-link-text">
+                Aligators
+              </p>
+            </a>
+          </div>
+        </li>
+      </ui>
+    </nav>
+  </aside>
+
+  <div class="zoo container-1480 margin-auto flex flex-row-nowrap flex-sb-start">
+    <aside class="zoo__aside aside show-after-600-b">
+      <nav class="zoo__nav nav">
+        <ul class="zoo__nav-list nav__list list">
+          <li class="zoo__nav-list-item list__item">
+            <a class="zoo__nav-link zoo__nav-link_active link rotate-border" href="pandas.html">
+              <div class="zoo__nav-image zoo__nav-image_pandas rotate-border__container rotate-border__container_zoo">
+                <div class="rotate-border__img rotate-border__img_zoo rotate-border__img_zoo_pandas"></div>
+              </div>
+
+              <h5 class="zoo__nav-text">Pandas</h5>
+            </a>
+          </li>
+
+          <li class="zoo__nav-list-item list__item">
+            <a class="zoo__nav-link link rotate-border" href="./eagles.html">
+              <div class="zoo__nav-image zoo__nav-image_eagles rotate-border__container rotate-border__container_zoo">
+                <div class="rotate-border__img rotate-border__img_zoo rotate-border__img_zoo_eagles"></div>
+              </div>
+
+              <h5 class="zoo__nav-text">Eagles</h5>
+            </a>
+          </li>
+
+          <li class="zoo__nav-list-item list__item">
+            <a class="zoo__nav-link link rotate-border" href="./gorillas.html">
+              <div class="zoo__nav-image zoo__nav-image_gorillas rotate-border__container rotate-border__container_zoo">
+                <div class="rotate-border__img rotate-border__img_zoo rotate-border__img_zoo_gorillas"></div>
+              </div>
+
+              <h5 class="zoo__nav-text">Gorillas</h5>
+            </a>
+          </li>
+
+          <li class="zoo__nav-list-item list__item">
+            <a class="zoo__nav-link link rotate-border" href="./aligators.html">
+              <div
+                class="zoo__nav-image zoo__nav-image_aligators rotate-border__container rotate-border__container_zoo">
+                <div class="rotate-border__img rotate-border__img_zoo rotate-border__img_zoo_aligators"></div>
+              </div>
+
+              <h5 class="zoo__nav-text">Aligators</h5>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="zoo__main main">
+      <div class="main__title-container flex flex-row-nowrap flex-sb-center">
+        <h2 class="main__title h2">The Giant Pandas</h2>
+
+        <div class="main__title-btns flex flex-sb-center">
+          <button class="main__title-btn main__title-btn_info">
+            <img class="main__title-btn-img show-after-600-i" src="./assets/icons/info.svg" alt="info">
+            <img class="main__title-btn-img show-before-600-i" src="./assets/icons/zoo-info-mobile.svg" alt="info">
+          </button>
+
+          <button class="main__title-btn main__title-btn_heart">
+            <img class="main__title-btn-img show-after-600-i" src="./assets/icons/heart.svg" alt="heart">
+            <img class="main__title-btn-img show-before-600-i" src="./assets/icons/zoo-heart-mobile.svg" alt="heart">
+          </button>
+        </div>
+      </div>
+
+      <section class="main__section main__section_main-cameras main-cameras">
+        <div class="main-cameras__title-container">
+          <h3 class="main-cameras__title">Main cameras</h3>
+        </div>
+
+        <div class="main-cameras__camera-container">
+          <iframe class="main-cameras__camera main-cameras__camera" src="https://www.youtube.com/embed/OObOQ2GElhA"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="main__section main__section_side-cameras side-cameras">
+        <div class="side-cameras__title-container">
+          <h3 class="side-cameras__title">Side cameras</h3>
+        </div>
+
+        <div class="side-cameras__cameras-container">
+          <div
+            class="side-cameras__carousel side-cameras__carousel_outer carousel__side-cameras carousel__side-cameras_outer">
+            <div
+              class="side-cameras__carousel side-cameras__carousel_inner carousel__side-cameras carousel__side-cameras_inner flex flex-row-wrap flex-sb-center">
+              <iframe class="side-cameras__camera side-cameras__camera" src="https://www.youtube.com/embed/OObOQ2GElhA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+              <iframe class="side-cameras__camera side-cameras__camera" src="https://www.youtube.com/embed/OObOQ2GElhA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+              <iframe class="side-cameras__camera side-cameras__camera show-after-900-b"
+                src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="slider side-cameras__slider flex flex-column-nowrap justify-content-space-between">
+            <img class="slider__arrow slider__arrow_right side-cameras__slider_right"
+              src="./assets/icons/slider-arrow-right.svg" alt="slider right">
+
+            <img class="slider__arrow slider__arrow_left side-cameras__slider_left show-after-600-b"
+              src="./assets/icons/slider-arrow-right.svg" alt="slider left">
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section main__section_description description">
+        <div class="description-container flex flex-row-wrap flex-sb-start">
+          <div class="description__column description__column_info">
+            <h2 class="description__column-title info__title h2">Information</h2>
+
+            <dl class="info__list list">
+              <dt class="info__list-item">Zoo</dt>
+
+              <dd class="info__list-item-description text color_black">
+                <a class="info__list-link" href="">
+                  Shenshuping Gengda Panda Center
+                </a>
+              </dd>
+
+              <dt class="info__list-item">Type of aviary</dt>
+
+              <dd class="info__list-item-description text color_black">
+                Imitation of the natural environment
+              </dd>
+
+              <dt class="info__list-item">Habitat</dt>
+
+              <dd class="info__list-item-description text color_black">
+                <a class="info__list-link" href="">
+                  Mountains of southwest China
+                </a>
+              </dd>
+
+              <dt class="info__list-item">Type of food</dt>
+
+              <dd class="info__list-item-description text color_black">
+                Bamboo
+              </dd>
+
+              <dt class="info__list-item">Population in the world</dt>
+
+              <dd class="info__list-item-description text color_black">
+                600
+              </dd>
+
+              <dt class="info__list-item">About species</dt>
+
+              <dd class="info__list-item-description text color_black">
+                The yards at Shenshuping Gengda Panda Center in China's Wolong Valley are filled with bamboo--making for
+                some very happy panda residents.
+              </dd>
+            </dl>
+          </div>
+
+          <div class="description__column description__column_facts">
+            <h2 class="description__column-title facts__title h2">Interesting Facts</h2>
+
+            <ul class="facts__list list">
+              <li class="facts__list-item text color_black">
+                The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo
+                counts for 99 percent of their diet.
+              </li>
+
+              <li class="facts__list-item text color_black">
+                Pandas are BIG eaters – every day they fill their tummies for up to 12 hours, shifting up to 12
+                kilograms of bamboo.
+              </li>
+
+              <li class="facts__list-item text color_black">
+                The giant panda’s scientific name is Ailuropoda melanoleuca, which means “black and white cat-foot”.
+              </li>
+
+              <li class="facts__list-item text color_black">
+                Female pandas give birth to one or two cubs every two years. Cubs stay with their mothers for 18 months
+                before venturing off on their own.
+              </li>
+
+              <li class="facts__list-item text color_black">
+                Baby pandas are born pink and measure about 15cm.
+              </li>
+
+              <li class="facts__list-item text color_black">
+                These beautiful bears are endangered, and it’s estimated that only around 1,000 remain in the wild.
+                That’s why we need to do all we can to protect them!
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <section class="section banner">
+    <button class="banner__btn btn btn_solid btn-text btn_modal_donate">Donate to volunteers</button>
+  </section>
+
+  <footer class="footer flex flex-center">
+    <div class="footer__container container-1920 width-100 flex flex-row-nowrap justify-content-space-between">
+      <nav class="footer__nav nav flex flex-center">
+        <a class="footer__logo nav__link link top-menu" href="./index.html">
+          <img class="footer__logo-img" src="./assets/icons/logo.svg" alt="logo">
+        </a>
+
+        <ul class="nav__list list flex flex-row-nowrap flex-sb-center width-100">
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu" href="./index.html">
+              about
+            </a>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu" href="./map.html">
+              MAP
+            </a>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu" href="./pandas.html">
+              Zoos
+            </a>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <button class="nav__link nav__pseudo-link link link_classic top-menu btn btn_modal_contact">
+              contact us
+            </button>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu"
+              href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">
+              design
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__creds flex flex-column-nowrap flex-end-center">
+        <ul class="footer__creds-list list">
+          <li class="footer__creds-list-item list__item">
+            Design by Lemeshko Kateryna
+          </li>
+
+          <li class="footer__creds-list-item list__item">
+            ©RSSchool and ©Yem Digital 2021
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/general.js"></script>
+  <script type="module" src="js/zoo.js"></script>
+  <script type="module" src="js/pages/zoo/carouselCameras.js"></script>
+  <script type="module" src="js/pages/zoo/navExpand.js"></script>
+</body>
+
+</html>

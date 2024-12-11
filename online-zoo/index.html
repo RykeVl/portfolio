@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Roboto+Mono:wght@400;500&family=Rubik:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style/css/reset.css">
+  <link rel="stylesheet" href="./style/css/pages/index.css">
+  <title>online-zoo</title>
+</head>
+
+<body>
+  <header class="header flex flex-row-wrap">
+    <div
+      class="header__container header__container_full container-1920 width-100 flex flex-row-nowrap justify-content-space-between">
+      <nav class="header__nav header__nav_full nav flex flex-center">
+        <a class="header__logo nav__link link top-menu" href="">
+          <img class="header__logo-img" src="./assets/icons/logo.svg" alt="logo">
+        </a>
+
+        <ul class="nav__list list flex flex-row-nowrap flex-sb-center width-100 show-after-900-f">
+          <li class="nav__list-item list__item">
+            <a class="nav__link nav__link_active link link_classic top-menu" href="">
+              about
+            </a>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu" href="./map.html">
+              MAP
+            </a>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu" href="./pandas.html">
+              Zoos
+            </a>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <button class="nav__link nav__pseudo-link link link_classic top-menu btn btn_modal_contact">
+              contact us
+            </button>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu"
+              href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">
+              design
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__features-container flex width-100">
+        <ul class="header__features list flex flex-row-nowrap flex-sb-center">
+          <li class="header__features-item list__item show-before-900-ib">
+            <button class="header__features-button header__features-button_burger">
+              <img src="./assets/icons/burger.svg" alt="burger button">
+            </button>
+          </li>
+
+          <li class="header__features-item list__item search show-after-900-ib">
+            <button class="header__features-button header__features-button_search search__button roboto color_white">
+              <img src="./assets/icons/search.svg" alt="search">
+            </button>
+            <input type="text" class="header__features-button_search-input search__input search__input_inactive">
+          </li>
+
+          <li class="header__features-item list__item show-900-1520-ib">
+            <button class="header__features-button header__features-button_login-1200 btn btn_login btn_modal_login">
+              <img src="./assets/icons/login-1200.svg" alt="login">
+            </button>
+          </li>
+
+          <li class="header__features-item list__item show-after-1520-ib">
+            <button class="header__features-button header__features-button_login roboto color_white btn_modal_login">
+              Log in
+            </button>
+          </li>
+
+          <li class="header__features-item header__features-item_border_round list__item show-after-1520-ib">
+            <button class="header__features-button header__features-button_signup roboto color_white btn_modal_signup">
+              Sign up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="header__container header__container_mobile width-100">
+      <nav class="header__nav header__nav_mobile nav flex flex-center">
+        <ul class="nav__list list flex flex-column-nowrap flex-center show-before-900-f width-100">
+          <li class="nav__list-item-mobile list__item flex flex-center width-100">
+            <a class="nav__link nav__link-mobile link link_classic top-menu" href="">
+              about
+            </a>
+          </li>
+
+          <li class="nav__list-item-mobile list__item flex flex-center width-100">
+            <a class="nav__link nav__link-mobile link link_classic top-menu" href="./map.html">
+              MAP
+            </a>
+          </li>
+
+          <li class="nav__list-item-mobile list__item flex flex-center width-100">
+            <a class="nav__link nav__link-mobile link link_classic top-menu" href="../zoo/pandas.html">
+              Zoos
+            </a>
+          </li>
+
+          <li class="nav__list-item-mobile list__item flex flex-center width-100">
+            <button class="nav__link nav__link-mobile nav__pseudo-link link link_classic top-menu btn btn_modal_contact"
+              href="">
+              contact us
+            </button>
+          </li>
+
+          <li class="nav__list-item-mobile list__item flex flex-center width-100">
+            <a class="nav__link nav__link-mobile link link_classic top-menu"
+              href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">
+              design
+            </a>
+          </li>
+
+          <li class="nav__list-item-mobile list__item flex flex-center width-100">
+            <button class="nav__link nav__link-mobile nav__pseudo-link link link_classic top-menu btn btn_modal_login">
+              my account
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main flex flex-column-nowrap flex-start-center">
+    <div class="main__container container-1480 flex row-2 row-1200">
+      <div class="col main__text-container">
+        <div class="main__text">
+          <h1 class="display_none">Online Zoo</h1>
+
+          <h2 class="main__title h1">
+            <span>Watch your favorite</span>
+            <br>
+            <strong>animals online</strong>
+          </h2>
+
+          <p class="main__paragraph text">
+            Observe different animals from around the world online in live time. Help vulunteers to take a good care of
+            animals, donate to your favorite ones.
+          </p>
+
+          <div class="main__btns">
+            <button class="main__btn btn btn_white btn-text btn_main_watch">
+              Watch now
+            </button>
+
+            <button class="main__btn btn btn_solid btn-text btn_main_donate show-before-1050-ib">
+              Donate
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="main__player-container">
+          <a class="player link" href="./pandas.html">
+            <div class="player__container filter_pale filter_pale_player   border_rounded border_rounded_before">
+              <img class="player__background player__background_panda show-after-1520-i"
+                src="./assets/images/player_background_panda.png" alt="panda stream">
+
+              <img class="player__background player__background_panda show-1050-1520-i"
+                src="./assets/images/player_background_panda-1200.png" alt="panda stream">
+
+              <img class="player__background player__background_panda show-before-1050-i"
+                src="./assets/images/player_background_panda-640.png" alt="panda stream">
+
+              <img class="player__play" src="./assets/icons/player__play.svg" alt="play">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="section how">
+    <div class="how__container flex flex-row-wrap flex-sb-center width-100">
+      <div class="how__title h2">
+        How it works
+      </div>
+
+      <div class="how__card">
+        <div class="how__card-image-container flex flex-center">
+          <img class="how__card-image" src="./assets/icons/how-binoculars.svg" alt="binoculars">
+        </div>
+
+        <p class="how__card-p text color_black">Keep an eye on your favorite animals online</p>
+      </div>
+
+      <div class="how__card">
+        <div class="how__card-image-container how__card-image-container_heart flex flex-center">
+          <img class="how__card-image" src="./assets/icons/how-heart.svg" alt="heart">
+        </div>
+
+        <p class="how__card-p text color_black">Become a part of the community</p>
+      </div>
+
+      <div class="how__card">
+        <div class="how__card-image-container flex flex-center">
+          <img class="how__card-image" src="./assets/icons/how-support.svg" alt="support">
+        </div>
+
+        <p class="how__card-p text color_black">Support animals with the donations</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section how_after">
+  </section>
+
+  <section class="section pets">
+    <div class="pets__container container-1480 margin-auto">
+      <div class="pets__header flex flex-row-wrap flex-sb-center">
+        <h2 class="pets__title h2">Pets in zoo</h2>
+
+        <a class="link show-after-600-b" href="./map.html">
+          <button class="btn btn_transparent btn-text btn_pets_full">
+            <img class="img btn__icon" src="./assets/icons/heart.svg" alt="heart">
+            Choose your Favorite
+          </button>
+        </a>
+      </div>
+
+      <div class="pets__cards-container">
+        <div class="pets__carousel pets__carousel_outer carousel__pets carousel__pets_outer">
+          <div class="pets__carousel pets__carousel_inner carousel__pets carousel__pets_inner">
+            <a class="pets__card-link link rotate-border" href="./pandas.html">
+              <div class="pets__card flex flex-column-nowrap flex-sb-center">
+                <div class="pets__card-img-container rotate-border__container rotate-border__container_pets">
+                  <div
+                    class="rotate-border__img rotate-border__img_pets rotate-border__img_pets_pandas filter_pale border_rounder_before">
+                  </div>
+                </div>
+
+                <div class="pets__card-info flex flex-row-nowrap flex-sb-center">
+                  <div class="pets__card-text flex flex-column-nowrap justify-content-space-between">
+                    <h3 class="pets__info-title">Pandas</h3>
+
+                    <p class="pets__info-place">Shenshuping Gengda Panda Center</p>
+                  </div>
+
+                  <img class="pets__stream-img img show-after-1150-i" src="./assets/icons/stream.svg" alt="stream">
+                </div>
+              </div>
+
+              <img class="pets__stream-img img show-before-1150-i" src="./assets/icons/stream.svg" alt="stream">
+            </a>
+
+            <a class="pets__card-link link rotate-border show-after-600-b" href="./eagles.html">
+              <div class="pets__card flex flex-column-nowrap flex-sb-center">
+                <div class="pets__card-img-container rotate-border__container rotate-border__container_pets">
+                  <div
+                    class="rotate-border__img rotate-border__img_pets rotate-border__img_pets_eagles filter_pale border_rounder_before">
+                  </div>
+                </div>
+
+                <div class="pets__card-info flex flex-row-nowrap flex-sb-center">
+                  <div class="pets__card-text flex flex-column-nowrap justify-content-space-between">
+                    <h3 class="pets__info-title">Eagles</h3>
+
+                    <p class="pets__info-place">Catalina Island</p>
+                  </div>
+
+                  <img class="pets__stream-img img show-after-1150-i" src="./assets/icons/stream.svg" alt="stream">
+                </div>
+              </div>
+
+              <img class="pets__stream-img img show-before-1150-i" src="./assets/icons/stream.svg" alt="stream">
+            </a>
+
+            <a class="pets__card-link link rotate-border show-after-1150-b" href="./gorillas.html">
+              <div class="pets__card flex flex-column-nowrap flex-sb-center">
+                <div class="pets__card-img-container rotate-border__container rotate-border__container_pets">
+                  <div
+                    class="rotate-border__img rotate-border__img_pets rotate-border__img_pets_gorillas filter_pale border_rounder_before">
+                  </div>
+                </div>
+
+                <div class="pets__card-info flex flex-row-nowrap flex-sb-center">
+                  <div class="pets__card-text flex flex-column-nowrap justify-content-space-between">
+                    <h3 class="pets__info-title">Gorillas</h3>
+
+                    <p class="pets__info-place">GRACE gorillas</p>
+                  </div>
+
+                  <img class="pets__stream-img img show-after-1150-i" src="./assets/icons/stream.svg" alt="stream">
+                </div>
+              </div>
+
+              <img class="pets__stream-img img show-before-1150-i" src="./assets/icons/stream.svg" alt="stream">
+            </a>
+
+            <a class="pets__card-link link rotate-border" href="./aligators.html">
+              <div class="pets__card flex flex-column-nowrap flex-sb-center">
+                <div class="pets__card-img-container rotate-border__container rotate-border__container_pets">
+                  <div
+                    class="rotate-border__img rotate-border__img_pets rotate-border__img_pets_aligators filter_pale border_rounder_before">
+                  </div>
+                </div>
+
+                <div class="pets__card-info flex flex-row-nowrap flex-sb-center">
+                  <div class="pets__card-text flex flex-column-nowrap justify-content-space-between">
+                    <h3 class="pets__info-title">Aligators</h3>
+
+                    <p class="pets__info-place">
+                      St. Augustine's Alligator Farm Zoological Park
+                    </p>
+                  </div>
+
+                  <img class="pets__stream-img img show-after-1150-i" src="./assets/icons/stream.svg" alt="stream">
+                </div>
+              </div>
+
+              <img class="pets__stream-img img show-before-1150-i" src="./assets/icons/stream.svg" alt="stream">
+            </a>
+
+            <a class="pets__card-link link rotate-border show-after-600-b" href="">
+              <div class="pets__card flex flex-column-nowrap flex-sb-center">
+                <div class="pets__card-img-container rotate-border__container rotate-border__container_pets">
+                  <div
+                    class="rotate-border__img rotate-border__img_pets rotate-border__img_pets_elephants filter_pale border_rounder_before">
+                  </div>
+                </div>
+
+                <div class="pets__card-info flex flex-row-nowrap flex-sb-center">
+                  <div class="pets__card-text flex flex-column-nowrap justify-content-space-between">
+                    <h3 class="pets__info-title">Elephants</h3>
+
+                    <p class="pets__info-place">Tembe Elephant Park</p>
+                  </div>
+
+                  <img class="pets__stream-img img show-after-1150-i" src="./assets/icons/stream.svg" alt="stream">
+                </div>
+              </div>
+
+              <img class="pets__stream-img img show-before-1150-i" src="./assets/icons/stream.svg" alt="stream">
+            </a>
+
+            <a class="pets__card-link link rotate-border show-after-1150-b" href="">
+              <div class="pets__card flex flex-column-nowrap flex-sb-center">
+                <div class="pets__card-img-container rotate-border__container rotate-border__container_pets">
+                  <div
+                    class="rotate-border__img rotate-border__img_pets rotate-border__img_pets_lemurs filter_pale border_rounder_before">
+                  </div>
+                </div>
+
+                <div class="pets__card-info flex flex-row-nowrap flex-sb-center">
+                  <div class="pets__card-text flex flex-column-nowrap justify-content-space-between">
+                    <h3 class="pets__info-title">Lemurs</h3>
+
+                    <p class="pets__info-place">Madagascar</p>
+                  </div>
+
+                  <img class="pets__stream-img img show-after-1150-i" src="./assets/icons/stream.svg" alt="stream">
+                </div>
+              </div>
+
+              <img class="pets__stream-img img show-before-1150-i" src="./assets/icons/stream.svg" alt="stream">
+            </a>
+          </div>
+        </div>
+
+        <div class="slider pets__slider flex flex-column-nowrap justify-content-space-between">
+          <img class="slider__arrow slider__arrow_right pets__slider_right" src="./assets/icons/slider-arrow-right.svg"
+            alt="slider right">
+
+          <img class="slider__arrow slider__arrow_left pets__slider_left" src="./assets/icons/slider-arrow-right.svg"
+            alt="slider left">
+        </div>
+
+        <img class="pets__penguin show-after-600-b" src="./assets/icons/pets-penguin.svg" alt="little penguin">
+      </div>
+
+      <a class="link show-before-600-b" href="./map.html">
+        <button class="btn btn_transparent btn-text btn_pets_mobile">
+          <img class="img btn__icon" src="./assets/icons/heart.svg" alt="heart">
+          Choose your Favorite
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <section class="section pay">
+    <div class="container-1480 margin-auto flex flex-column-nowrap flex-center">
+      <div class="pay__header flex flex-row-wrap flex-sb-center width-100">
+        <h2 class="pay__title h2 color_white">Pay and feed</h2>
+
+        <button class="pay__btn btn btn_solid btn-text btn_pay_full btn_modal_donate show-after-1200-b">Donate to
+          volunteers</button>
+
+        <button class="pay__btn btn btn_solid btn-text btn_pay_tablet btn_modal_donate show-600-1200-b">Donate</button>
+      </div>
+
+      <div class="pay__main-container flex flex-row-nowrap flex-sb-center width-100">
+        <div class="pay__img-container flex flex-center">
+          <img class="pay__img" src="./assets/icons/pay-donate.svg" alt="donate">
+
+          <p class="pay__img-text text">You donate to your favourite animals</p>
+        </div>
+
+        <img class="pay__arrow pay__arrow_1920 show-after-1520-b" src="./assets/icons/pay-arrow.svg" alt="arrow">
+        <img class="pay__arrow pay__arrow_1200 show-1200-1520-b" src="./assets/icons/pay-arrow-1200.svg" alt="arrow">
+        <img class="pay__arrow pay__arrow_640 show-before-1200-b" src="./assets/icons/pay-arrow-640.svg" alt="arrow">
+
+        <div class="pay__img-container flex flex-center">
+          <img class="pay__img" src="./assets/icons/pay-trust.svg" alt="trust">
+
+          <p class="pay__img-text text">Zoo Keepers feed animals with their favourite food</p>
+        </div>
+
+        <img class="pay__arrow pay__arrow_1920 show-after-1520-b" src="./assets/icons/pay-arrow.svg" alt="arrow">
+        <img class="pay__arrow pay__arrow_1200 show-1200-1520-b" src="./assets/icons/pay-arrow-1200.svg" alt="arrow">
+        <img class="pay__arrow pay__arrow_640 show-before-1200-b" src="./assets/icons/pay-arrow-640.svg" alt="arrow">
+
+        <div class="pay__img-container flex flex-center">
+          <img class="pay__img" src="./assets/icons/pay-monkey.svg" alt="monkey">
+
+          <p class="pay__img-text text">Animals are healthy and happy</p>
+        </div>
+      </div>
+
+      <button class="btn btn_solid btn-text btn_pay_mobile btn_modal_donate show-before-600-b">Donate to
+        volunteers</button>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <div class="container-1480 margin-auto">
+      <div class="testimonials__header flex flex-row-wrap flex-sb-center">
+        <h2 class="testimonials__title h2">Testimonials</h2>
+
+        <button class="btn_testimonials_full btn btn_transparent btn-text btn_modal_feedback show-after-600-b">
+          <img class="btn__icon" src="./assets/icons/testimonials-letter.svg" alt="letter icon">
+
+          Leave feedback
+        </button>
+      </div>
+
+      <div class="testimonials__feedback-container flex flex-row-wrap flex-sb-center">
+        <div class="testimonials__feedback feedback">
+          <div class="feedback__text-cloud">
+            <img class="feedback__cloud-img show-after-1520-b" src="./assets/images/cloud.png" alt="cloud">
+            <img class="feedback__cloud-img show-1200-1520-b" src="./assets/images/cloud-1200.png" alt="cloud">
+            <img class="feedback__cloud-img show-600-1200-b" src="./assets/images/cloud-640.png" alt="cloud">
+            <img class="feedback__cloud-img show-before-600-b" src="./assets/images/cloud-320.png" alt="cloud">
+
+            <p class="feedback__date">20 Decepmer 2020</p>
+
+            <p class="feedback__text">Awesome place to observe my favourite aligators at Florida, the quality of the
+              video
+              is great.</p>
+          </div>
+
+          <div class="feedback__author flex flex-row-nowrap flex-start-center">
+            <img class="feedback__author-pic" src="./assets/images/feedback-author-1.png" alt="Adam avatar">
+
+            <h4 class="feedback__author-name">Adam, Spain</h4>
+          </div>
+        </div>
+
+        <div class="testimonials__feedback feedback">
+          <div class="feedback__text-cloud">
+            <img class="feedback__cloud-img show-after-1520-b" src="./assets/images/cloud.png" alt="cloud">
+            <img class="feedback__cloud-img show-1200-1520-b" src="./assets/images/cloud-1200.png" alt="cloud">
+            <img class="feedback__cloud-img show-600-1200-b" src="./assets/images/cloud-640.png" alt="cloud">
+            <img class="feedback__cloud-img show-before-600-b" src="./assets/images/cloud-320.png" alt="cloud">
+
+            <p class="feedback__date">20 Decepmer 2020</p>
+
+            <p class="feedback__text">
+              Awesome place to observe my favourite aligators at Florida, the quality of the video
+              is great.
+            </p>
+          </div>
+
+          <div class="feedback__author flex flex-row-nowrap flex-start-center">
+            <img class="feedback__author-pic" src="./assets/images/feedback-author-2.png" alt="Chris avatar">
+
+            <h4 class="feedback__author-name">Chris, Australia</h4>
+          </div>
+        </div>
+
+        <div class="testimonials__feedback feedback hide-600-820-b">
+          <div class="feedback__text-cloud">
+            <img class="feedback__cloud-img show-after-1520-b" src="./assets/images/cloud.png" alt="cloud">
+            <img class="feedback__cloud-img show-1200-1520-b" src="./assets/images/cloud-1200.png" alt="cloud">
+            <img class="feedback__cloud-img show-600-1200-b" src="./assets/images/cloud-640.png" alt="cloud">
+            <img class="feedback__cloud-img show-before-600-b" src="./assets/images/cloud-320.png" alt="cloud">
+
+            <p class="feedback__date">20 Decepmer 2020</p>
+
+            <p class="feedback__text">
+              Awesome place to observe my favourite aligators at Florida, the quality of the video
+              is great.
+            </p>
+          </div>
+
+          <div class="feedback__author flex flex-row-nowrap flex-start-center">
+            <img class="feedback__author-pic" src="./assets/images/feedback-author-3.png" alt="Amely avatar">
+
+            <h4 class="feedback__author-name">Amely, USA</h4>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn_testimonials_mobile btn btn_transparent btn-text btn_modal_feedback show-before-600-b">
+        <img class="btn__icon" src="./assets/icons/testimonials-letter.svg" alt="letter icon">
+
+        Leave feedback
+      </button>
+    </div>
+  </section>
+
+  <section class="section look">
+    <div class="container-1480 margin-auto">
+      <h2 class="look__title h2">Look at this beautiful animals</h2>
+
+      <div class="look__imgs-container">
+        <div class="look__carousel look__carousel_outer carousel__look carousel__look_outer">
+          <div
+            class="look__carousel look__carousel_inner carousel__look carousel__look_inner flex flex-row-wrap flex-sb-center">
+            <a class="look__link link rotate-border" href="./pandas.html">
+              <div class="look__img-container rotate-border__container rotate-border__container_look">
+                <div class="rotate-border__img rotate-border__img_look rotate-border__img_look_pandas"></div>
+              </div>
+
+              <h4 class="look__img-title">pandas</h4>
+            </a>
+
+            <a class="look__link link rotate-border" href="./gorillas.html">
+              <div class="look__img-container rotate-border__container rotate-border__container_look">
+                <div class="rotate-border__img rotate-border__img_look rotate-border__img_look_gorillas"></div>
+              </div>
+
+              <h4 class="look__img-title">gorillas</h4>
+            </a>
+
+            <a class="look__link link rotate-border" href="./eagles.html">
+              <div class="look__img-container rotate-border__container rotate-border__container_look">
+                <div class="rotate-border__img rotate-border__img_look rotate-border__img_look_eagles"></div>
+              </div>
+
+              <h4 class="look__img-title">eagles</h4>
+            </a>
+
+            <a class="look__link link rotate-border" href="./aligators.html">
+              <div class="look__img-container rotate-border__container rotate-border__container_look">
+                <div class="rotate-border__img rotate-border__img_look rotate-border__img_look_aligators"></div>
+              </div>
+
+              <h4 class="look__img-title">aligators</h4>
+            </a>
+
+            <a class="look__link link rotate-border hide-620-1200-b" href="">
+              <div class="look__img-container rotate-border__container rotate-border__container_look">
+                <div class="rotate-border__img rotate-border__img_look rotate-border__img_look_elephants"></div>
+              </div>
+
+              <h4 class="look__img-title">elephants</h4>
+            </a>
+
+            <a class="look__link link rotate-border hide-620-1200-b" href="">
+              <div class="look__img-container rotate-border__container rotate-border__container_look">
+                <div class="rotate-border__img rotate-border__img_look rotate-border__img_look_lemurs"></div>
+              </div>
+
+              <h4 class="look__img-title">lemurs</h4>
+            </a>
+
+            <a class="look__link link rotate-border show-after-1520-b" href="./pandas.html">
+              <div class="look__img-container rotate-border__container rotate-border__container_look">
+                <div class="rotate-border__img rotate-border__img_look rotate-border__img_look_pandas"></div>
+              </div>
+
+              <h4 class="look__img-title">pandas</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="slider look__slider flex flex-column-nowrap justify-content-space-between show-after-620-f">
+          <img class="slider__arrow slider__arrow_right look__slider_right" src="./assets/icons/slider-arrow-right.svg"
+            alt="slider right">
+
+          <img class="slider__arrow slider__arrow_left look__slider_left" src="./assets/icons/slider-arrow-right.svg"
+            alt="slider left">
+        </div>
+
+        <div class="slider look__slider show-before-620-b">
+          <img class="slider__arrow slider__arrow_down" src="./assets/icons/slider-arrow-right.svg" alt="slider down">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer flex flex-center">
+    <div class="footer__container container-1920 width-100 flex flex-row-nowrap justify-content-space-between">
+      <nav class="footer__nav nav flex flex-center">
+        <a class="footer__logo nav__link link top-menu" href="">
+          <img class="footer__logo-img" src="./assets/icons/logo.svg" alt="logo">
+        </a>
+
+        <ul class="nav__list list flex flex-row-nowrap flex-sb-center width-100">
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu" href="">
+              about
+            </a>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu" href="./map.html">
+              MAP
+            </a>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu" href="./pandas.html">
+              Zoos
+            </a>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <button class="nav__link nav__pseudo-link link link_classic top-menu btn btn_modal_contact">
+              contact us
+            </button>
+          </li>
+
+          <li class="nav__list-item list__item">
+            <a class="nav__link link link_classic top-menu"
+              href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">
+              design
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__creds flex flex-column-nowrap flex-end-center">
+        <ul class="footer__creds-list list">
+          <li class="footer__creds-list-item list__item">
+            Design by Lemeshko Kateryna
+          </li>
+
+          <li class="footer__creds-list-item list__item">
+            ©RSSchool and ©Yem Digital 2021
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/general.js"></script>
+  <script type="module" src="js/index.js"></script>
+  <script type="module" src="js/pages/index/carouselPets.js"></script>
+  <script type="module" src="js/pages/index/carouselLook.js"></script>
+</body>
+
+</html>
