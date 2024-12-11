@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wildlife</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -81,7 +81,11 @@
         <img class="slider" src="assets/slide.svg" alt="left">
         <div class="pictures">
           <div class="img-block">
-            <img src="assets/Deer.jpg" alt="deer">
+            <picture>
+              <source srcset="assets/deer.avif" type="image/avif">
+              <source srcset="assets/deer.webp" type="image/webp">
+              <img src="assets/deer.jpg" alt="deer">
+            </picture>
             <div class="text-block">
               <h4>Deer</h4>
               <h5 class="smol">
@@ -90,7 +94,11 @@
             </div>
           </div>
           <div class="img-block">
-            <img src="assets/Squirrel.jpg" alt="squirrel">
+            <picture>
+              <source srcset="assets/squirrel.avif" type="image/avif">
+              <source srcset="assets/squirrel.webp" type="image/webp">
+              <img src="assets/squirrel.jpg" alt="squirrel">
+            </picture>
             <div class="text-block">
               <h4>Squirrel</h4>
               <h5 class="smol">
@@ -99,7 +107,11 @@
             </div>
           </div>
           <div class="img-block">
-            <img src="assets/Bird.jpg" alt="bird">
+            <picture>
+              <source srcset="assets/bird.avif" type="image/avif">
+              <source srcset="assets/bird.webp" type="image/webp">
+              <img src="assets/bird.jpg" alt="bird">
+            </picture>
             <div class="text-block">
               <h4>Bird</h4>
               <h5 class="smol">

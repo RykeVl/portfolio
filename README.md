@@ -1,4 +1,4 @@
-1. [Wildlife](https://github.com/RykeVl/portfolio/tree/wildlife)(HTML, SCSS, Semantic, Figma) - [Deployment](https://rykevl.github.io/portfolio/wildlife/) - Last time updated 09/03/2021
+1. [Wildlife](https://github.com/RykeVl/portfolio/tree/wildlife)(HTML, SCSS, Semantic, Figma) - [Deployment](https://rykevl.github.io/portfolio/wildlife/) - Last time updated 11/12/2024
 2. [Webdev](https://github.com/RykeVl/portfolio/tree/webdev)(HTML, Pure CSS, Semantic, [BEM](https://en.bem.info/), Figma) - [Deployment](https://rykevl.github.io/portfolio/webdev/) - Last time updated 27/07/2021
 3. [Calculator](https://github.com/RykeVl/portfolio/tree/calculator)(JS(Vanilla)) - [Deployment](https://rykevl.github.io/portfolio/calculator/) - Last time updated 18/10/2020
 4. [Virtual Keyboard](https://github.com/RykeVl/portfolio/tree/virtual-keyboard)(JS, Sound Effects, Voice Input) - [Deployment](https://rykevl.github.io/portfolio/virtual-keyboard/) - Last time updated 04/11/2020
